@@ -1,4 +1,4 @@
-# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/SangChulLee/003_Statistical_analysis/003_Load_csv_file && \
+# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/SangChulLee/003_Statistical_analysis/004_Load_xslx_file && \
 # rm e.l && Rscript main.r \
 # 2>&1 | tee -a e.l && code e.l
 
