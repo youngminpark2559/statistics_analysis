@@ -3,15 +3,15 @@
 # 2>&1 | tee -a e.l && code e.l
 
 # ================================================================================
-# /home/young/Pictures/2019_07_12_11:48:48.png
+# https://github.com/youngminpark2559/statistics_analysis/blob/master/Statistical_analysis/SangChulLee/002_Install_and_test_R/006_Data_structure_in_R/pics/2019_07_12_11:48:48.png
 
 # ================================================================================
 # Vector and Dataframe is most used
 
 # ================================================================================
-# /home/young/Pictures/2019_07_12_11:49:45.png
+# https://github.com/youngminpark2559/statistics_analysis/blob/master/Statistical_analysis/SangChulLee/002_Install_and_test_R/006_Data_structure_in_R/pics/2019_07_12_11:49:45.png
 
-# /home/young/Pictures/2019_07_12_11:50:07.png
+# https://github.com/youngminpark2559/statistics_analysis/blob/master/Statistical_analysis/SangChulLee/002_Install_and_test_R/006_Data_structure_in_R/pics/2019_07_12_11:50:07.png
 
 # ================================================================================
 # generate numbers from 1 to 12
