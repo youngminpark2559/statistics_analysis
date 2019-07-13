@@ -14,16 +14,16 @@ from statsmodels.robust.scale import mad
 
 # ================================================================================
 # Ideal case
-# /home/young/Pictures/2019_07_13_18:01:02.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:01:02.png
 
 # ================================================================================
 # Too low variance
 
-# /home/young/Pictures/2019_07_13_18:02:21.png
-# /home/young/Pictures/2019_07_13_18:02:43.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:02:21.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:02:43.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_13_18:03:13.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:03:13.png
 
 # ================================================================================
 weight_df=pd.read_csv("./Data/0401.wgt.csv",encoding='utf8')
@@ -43,7 +43,7 @@ axes0.boxplot([weight_vals,sex_vals],sym="bo")
 plt.title('Box plot of weight')
 plt.xticks([1,2], ['weight','sex'])
 plt.show()
-# /home/young/Pictures/2019_07_13_18:11:38.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:11:38.png
 
 # ================================================================================
 fig,axes_for_hist_with_outlier=plt.subplots()
@@ -53,7 +53,7 @@ plt.title("Histogram of weight data with outlier")
 plt.xlabel("Weight value")
 plt.ylabel("Number of people")
 plt.show()
-# /home/young/Pictures/2019_07_13_18:28:42.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:28:42.png
 
 # ================================================================================
 # Remove data where weight>75
@@ -80,7 +80,7 @@ axes0.boxplot([removed_outlier_df["weight"],removed_outlier_df["sex"]],sym="bo")
 plt.title('Box plot of weight')
 plt.xticks([1,2], ['weight','sex'])
 plt.show()
-# /home/young/Pictures/2019_07_13_18:22:55.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:22:55.png
 
 # ================================================================================
 fig,axes_for_hist_with_outlier=plt.subplots()
@@ -90,6 +90,6 @@ plt.title("Histogram of weight data without outlier")
 plt.xlabel("Weight value")
 plt.ylabel("Number of people")
 plt.show()
-# /home/young/Pictures/2019_07_13_18:29:33.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/004_Statistical_analysis/008_Remove_outliers_Box_plot/pics/2019_07_13_18:29:33.png
 
 # ================================================================================
