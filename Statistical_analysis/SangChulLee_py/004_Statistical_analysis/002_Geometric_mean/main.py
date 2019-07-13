@@ -23,5 +23,17 @@ mulplied=1
 for one_salary in anual_salary:
   mulplied=mulplied*one_salary
 
-print("mulplied",mulplied)
-afaf
+# print("mulplied",mulplied)
+# 63936000000000000
+
+# ================================================================================
+def nth_root_of_m(a,n):
+    return pow(a,(1/n))
+
+a=mulplied
+n=len(year)
+q=round(nth_root_of_m(a,n),3)
+print(q)
+# 2296.937
+
+# ================================================================================
