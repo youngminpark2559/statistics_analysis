@@ -14,16 +14,16 @@ from statsmodels.robust.scale import mad
 import random
 
 # ================================================================================
-# /home/young/Pictures/2019_07_13_22:32:39.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/001_One_sample_T_test/pics/2019_07_13_22:32:39.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_13_22:33:31.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/001_One_sample_T_test/pics/2019_07_13_22:33:31.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_13_22:34:07.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/001_One_sample_T_test/pics/2019_07_13_22:34:07.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_13_22:34:26.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/001_One_sample_T_test/pics/2019_07_13_22:34:26.png
 
 # ================================================================================
 # null hypothesis
@@ -64,20 +64,3 @@ std_value=np.sqrt(var_value)
 standard_error=var_value/np.sqrt(n)
 # print("standard_error",standard_error)
 # 18.447914389486588
-
-
-# ================================================================================
-
-
-f_x
-
-
-
-
-
-
-
-
-
-
-

@@ -14,12 +14,12 @@ from statsmodels.robust.scale import mad
 import random
 
 # ================================================================================
-# /home/young/Pictures/2019_07_14_07:39:41.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_One_sample_T_test/pics/2019_07_14_07:39:41.png
 
 # Most cases use "two-sided test"
 # equal or not equal
 
-# /home/young/Pictures/2019_07_14_07:41:32.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_One_sample_T_test/pics/2019_07_14_07:41:32.png
 
 # Probability of H_0 is true is tested by using "two-sided test"
 
@@ -27,9 +27,9 @@ import random
 # Some cases should have to see "greater or less"
 # Then, you can use "right-sided test" or "left-sided test"
 
-# /home/young/Pictures/2019_07_14_07:43:12.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_One_sample_T_test/pics/2019_07_14_07:43:12.png
 
-# /home/young/Pictures/2019_07_14_07:42:47.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_One_sample_T_test/pics/2019_07_14_07:42:47.png
 
 # ================================================================================
 OST_df=pd.read_csv('./Data/01.OST.csv',encoding='utf8')
@@ -46,5 +46,3 @@ OST_df=pd.read_csv('./Data/01.OST.csv',encoding='utf8')
 # 8  296.1497
 
 # ================================================================================
-
-

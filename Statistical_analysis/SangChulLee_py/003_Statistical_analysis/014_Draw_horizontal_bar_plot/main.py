@@ -70,6 +70,6 @@ plt.title("School distribution of responders")
 plt.xlabel("School")
 plt.ylabel("Number of responders")
 plt.show()
-# /home/young/Pictures/2019_07_13_13:50:42.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/003_Statistical_analysis/014_Draw_horizontal_bar_plot/pics/2019_07_13_13:50:42.png
 
 # ================================================================================
