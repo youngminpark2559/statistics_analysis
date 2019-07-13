@@ -93,12 +93,3 @@ plt.show()
 # /home/young/Pictures/2019_07_13_18:29:33.png
 
 # ================================================================================
-# Stem plot tutorial
-
-x=removed_outlier_df["weight"]
-fig,axes_for_stem_plot=plt.subplots()
-
-plt.stem(x)
-
-plt.title("Stem Plot")
-plt.show()
