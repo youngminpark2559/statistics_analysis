@@ -303,3 +303,5 @@ plt.xlabel("Worn time")
 plt.ylabel("Number of tires")
 plt.show()
 # https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/006_007_008_009_Independent_sample_T_test/pics/2019_07_14_13:43:45.png
+
+# ================================================================================
