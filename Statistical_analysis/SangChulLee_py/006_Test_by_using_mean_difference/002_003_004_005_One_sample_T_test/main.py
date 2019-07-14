@@ -1,5 +1,5 @@
 # conda activate py36gputorch100 && \
-# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test && \
+# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test && \
 # rm e.l && python main.py \
 # 2>&1 | tee -a e.l && code e.l
 
@@ -17,12 +17,12 @@ import scipy.stats as stats
 import math
 
 # ================================================================================
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_07:39:41.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_07:39:41.png
 
 # Most cases use "two-sided test"
 # equal or not equal
 
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_07:41:32.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_07:41:32.png
 
 # Probability of H_0 is true is tested by using "two-sided test"
 
@@ -30,9 +30,9 @@ import math
 # Some cases should have to see "greater or less"
 # Then, you can use "right-sided test" or "left-sided test"
 
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_07:43:12.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_07:43:12.png
 
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_07:42:47.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_07:42:47.png
 
 # ================================================================================
 OST_df=pd.read_csv('./Data/01.OST.csv',encoding='utf8')
@@ -67,7 +67,7 @@ OST_df=pd.read_csv('./Data/01.OST.csv',encoding='utf8')
 # ================================================================================
 OST_df.describe().plot(kind="bar")
 plt.show()
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_09:11:24.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_09:11:24.png
 
 # ================================================================================
 fig,axes0_for_box_plot=plt.subplots()
@@ -77,7 +77,7 @@ axes0_for_box_plot.boxplot(OST_df["weight"],sym="bo")
 plt.title('Box plot of weight')
 plt.xticks([1], ['weight'])
 plt.show()
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_09:10:52.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_09:10:52.png
 
 # ================================================================================
 fig2,axes2_for_hist=plt.subplots()
@@ -90,7 +90,7 @@ plt.xlabel("Weight values")
 plt.ylabel("Number of people")
 plt.subplots_adjust(wspace=None,hspace=0.3)
 plt.show()
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_09:15:57.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_09:15:57.png
 
 # ================================================================================
 #generate 20 random heights with mean of 180, standard deviation of 5
@@ -118,9 +118,9 @@ statistic,pvalue=tTestResult
 # So, you can say H_0 is false claim, which should be rejected
 
 # ================================================================================
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_09:44:30.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_09:44:30.png
 
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_09:44:46.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_09:44:46.png
 
 # ================================================================================
 mu = 320
@@ -144,4 +144,4 @@ plt.ylabel("Probability")
 plt.xlim(290, 330)
 plt.ylim(0, 0.4)
 plt.show()
-# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_One_sample_T_test/pics/2019_07_14_10:05:18.png
+# https://raw.githubusercontent.com/youngminpark2559/statistics_analysis/master/Statistical_analysis/SangChulLee_py/006_Test_by_using_mean_difference/002_003_004_005_One_sample_T_test/pics/2019_07_14_10:05:18.png
