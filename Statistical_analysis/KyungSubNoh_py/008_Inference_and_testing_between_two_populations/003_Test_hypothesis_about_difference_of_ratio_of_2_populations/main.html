@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+
+<xmp>
+
+https://www.youtube.com/watch?v=k6cj3yBXm1k&list=PLsri7w6p16vvQCo9pmuRNY_SYoOGB6bWM&index=6
+
+================================================================================
+Population A
+Population A has ratio A ($$$P_A$$$)
+
+Population B
+Population B has ratio B ($$$P_B$$$)
+
+You want to know $$$P_A-P_B$$$
+Can you calculate $$$P_A-P_B$$$ by using $$$\hat{P}_A-\hat{P}_B$$$
+
+================================================================================
+Hypothesis
+
+2 side test
+$$$H_0:P_A-P_B=0$$$
+$$$H_0:P_A-P_B\ne 0$$$
+
+left side test
+$$$H_0:P_A-P_B=0$$$
+$$$H_0:P_A-P_B\lt 0$$$
+
+right side test
+$$$H_0:P_A-P_B=0$$$
+$$$H_0:P_A-P_B\gt 0$$$
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:59:09.png' alt=''><xmp>
+
+* Presence frequence in university A
+* Unit: number of people
+* a class (Presence is checked by smartphone), b class (Presence is checked by raising a hand)
+
+================================================================================
+$$$H_0: p_a - p_b = 0$$$
+$$$H_1: p_a - p_b \ne 0$$$
+
+number of samples
+$$$n_a, n_b$$$
+
+expectation value
+$$$ E(\hat{p}_a - \hat{p}_b) = p_a-p_b$$$
+
+variance
+$$$\sigma^2(\hat{p}_a-\hat{p}_b) \\
+= \sigma^2(\hat{p}_a) + \sigma^2(\hat{p}_b) \\
+= \dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}$$$
+
+test statsitics
+$$$z = \dfrac{ (\hat{p}_a - \hat{p}_b) - (p_a - p_b) }{\sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} - \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b} }}$$$
+
+================================================================================
+$$$s^2(\hat{p}_a - \hat{p}_b)
+= \dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}$$$
+
+$$$s = \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}$$$
+
+================================================================================
+Trusted region
+
+$$$(\hat{p}_a - \hat{p}_b) - z_{\frac{\alpha}{2}} \times \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}
+\le p_a - p_b
+\le (\hat{p}_a + \hat{p}_b) - z_{\frac{\alpha}{2}} \times \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}$$$
+
+================================================================================
+Calculation
+
+a class: 30 people $$$\times$$$ 15 weeks = 450 people
+a class: 35 people $$$\times$$$ 15 weeks = 525 people
+
+actual presence:
+a class: 424 people
+b class: 476 people
+
+$$$\hat{p}_a = \dfrac{424}{450} = 0.942$$$
+$$$\hat{p}_b = \dfrac{476}{525} = 0.907$$$
+
+$$$s(\hat{p}_a - \hat{p}_b) \\
+= \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}\\
+= \sqrt{\dfrac{0.942(1-0.942)}{450} + \dfrac{0.907(1-0.907)}{525}}
+= 0.017$$$
+
+$$$z_{\frac{\alpha}{2}} = 1.96$$$ $$$\Rightarrow$$$ $$$\pm 1.96 \times 0.017 = \pm 0.033 $$$
+
+$$$(0.942 - 0.907) - 0.033 \le p_a-p_b \le (0.942 - 0.907) + 0.033$$$
+$$$0.002 \le p_a-p_b \le 0.068$$$
+
+================================================================================
+Rejection area
+
+$$$|\pm 1.96| \gt |z|$$$
+
+$$$z \\
+= \dfrac{(0.942-0.907) - 0}{\sqrt{\frac{0.942 \times (1-0.942)}{450} + \frac{0.907 \times (1-0.907)}{525}}} \\
+= \frac{0.035}{0.017} \\
+= 2.059$$$
+
+$$$H_0$$$ is rejected
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>

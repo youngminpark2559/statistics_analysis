@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+
+https://www.youtube.com/watch?v=m_AUjFI969c&list=PLsri7w6p16vtEz_J1G7HQG-Rm8vpZPtPS&index=6
+
+================================================================================
+energy efficiency of car: 25km/l
+variance : 6.25
+
+there is rumor that this energy efficiency is made up
+
+* Sample cars: 50
+
+* Energy efficiency: 22.4km/l
+* Variance : 3.84
+
+Question:
+* variance 6.25 is correct at p-value=0.05?
+
+================================================================================
+Answer
+
+$$$\sigma^2=6.25$$$
+$$$H_0:\sigma^2=6.25$$$
+$$$H_1:\sigma^2\ne 6.25$$$
+$$$n=50$$$
+$$$\bar{x}=22.4$$$
+$$$s^2=3.84$$$
+$$$\alpha=0.05$$$
+
+test statistics 
+$$$\chi^2_{(n-1)} \\
+= \frac{(n-1)\times s^2}{\sigma^2} \\
+= \frac{(50-1)\times 3.84}{6.25} \\
+= 30.106$$$
+
+Let's calculate following values
+$$$\chi^2_{n-1,1-\frac{\alpha}{2}} = 31.555$$$
+$$$\chi^2_{n-1,\frac{\alpha}{2}} = 70.222$$$
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_14:12:26.png' alt=''><xmp>
+
+$$$H_0$$$ is rejected due to 30.106
+
+Meaning: company insists the variance is 6.25 but it's not actually
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>
+

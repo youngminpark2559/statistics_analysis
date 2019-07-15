@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+https://www.youtube.com/watch?v=SYdqCHfMycM&list=PLsri7w6p16vu3mMWzijxOmhrlvN23W04_&index=3
+
+================================================================================
+How to see correlational relationship between variables
+- Scatter plot
+
+- Covariance:
+  - variance of 2 random variables in in positive direction or negative direction?
+  - there is variance of random variable A
+  - there is variance of random variable B
+  - there is common variance from A and B
+  - $$$Cov(X,Y) = \dfrac{\sum\limits_{i=1}^{N} (X_i-\bar{X}) (Y_i-\bar{Y}) }{N}\\$$$
+  - You can see variance of X $$$(X_i-\bar{X})$$$ and variance of Y $$$(Y_i-\bar{Y})\\$$$
+  - $$$Covariance = \dfrac{\text{sum[(each_X_data-mean_of_X)*(each_Y_data-mean_of_Y)]}}{\text{num_combination}}\\$$$
+  - $$$Covariance = \dfrac{\text{sum[mean_deviation_of_X*mean_deviation_of_Y]}}{\text{num_combination}}$$$
+
+- Correlation coefficient
+
+================================================================================
+* Example
+
+$$$\bar{x}_{\text{ad_price}} = \dfrac{13+8+\cdots+21+25}{15} = 16.467$$$
+
+$$$\bar{x}_{\text{profit}} = \dfrac{94+70+\cdots+105+121}{15} = 98.933$$$
+
+* Deviation values
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_12:04:12.png' alt=''><xmp>
+
+================================================================================
+$$$Cov = \dfrac{17.103+244.976+\cdots+27.502+188.298}{15} = \dfrac{703.471}{15} = 46.898$$$
+
+================================================================================
+What does 46.898 mean?
+
+It's positive value so positive correlational relationship
+
+But you can't see the intensity of correlation
+
+================================================================================
+To resolve above limitation, you can use correlation coefficient
+
+$$$Cov(X,Y) = \dfrac{\sum\limits_{i=1}^{N} (X_i-\bar{X}) (Y_i-\bar{Y}) }{N}\\$$$
+
+$$$Corr(X,Y) = \dfrac{Cov(X,Y)}{ \sqrt{ \dfrac{\sum (X-\mu)^2}{N} \cdot \dfrac{\sum (Y-\mu)^2}{N} } } $$$
+
+$$$Corr(X,Y) = \dfrac{Cov(X,Y)}{ \sigma_Y \cdot \sigma_Y } $$$
+
+$$$Corr(X,Y) = \dfrac{\text{Cov of X and Y}}{ \text{std_of_X} \times \text{std_of_Y} } $$$
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>

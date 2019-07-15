@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+
+https://www.youtube.com/watch?v=uzsNpYSiXjY&list=PLsri7w6p16vtEz_J1G7HQG-Rm8vpZPtPS&index=2
+
+================================================================================
+* Set null hypothesis
+$$$H_0:\mu=\mu_0$$$
+
+population mean = sample mean
+
+* Set anti-hypothesis
+- two sided test
+$$$H_1:\mu\ne \mu_0$$$
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_10:50:45.png' alt=''><xmp>
+
+- Colored ends: null hypothesis is rejected
+
+- one sided test
+(1) left-one-sided test
+$$$H_1:\mu \mu_0$$$
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_10:52:00.png' alt=''><xmp>
+
+(2) right-one-sided test
+$$$H_1:\mu>\mu_0$$$
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_10:52:25.png' alt=''><xmp>
+
+================================================================================
+* Set p-value
+
+$$$\alpha=0.05$$$ against null hypothesis and anti hypothesis
+
+* If two sided, 
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_11:08:45.png' alt=''><xmp>
+
+================================================================================
+Left sided test
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_11:09:50.png' alt=''><xmp>
+
+Right sided test
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_11:10:10.png' alt=''><xmp>
+
+================================================================================
+* Example
+
+Test hypothesis when you know population's variance
+
+* Drink A says it has 300ml
+* Inspected 300 samples
+* Mean was 244.65 ml
+* std is 20.
+
+Question:
+* Set hypothesis
+* Perform left sided test with p-value=0.05
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_11:14:53.png' alt=''><xmp>
+
+Answer:
+$$$H_0: \mu=300ml$$$
+$$$H_1: \mu\lt 300ml$$$
+p-value $$$\alpha=0.05$$$
+$$$n=300$$$
+$$$\mu_0=244.65ml$$$
+$$$\sigma=20$$$
+
+left sided test:
+$$$-z_{\alpha} \\
+= -z_{0.05} $$$
+
+* See the std normal distribution table
+$$$= -1.64$$$
+
+If $$$z\lt -1.64$$$, $$$H_0$$$ is rejected, $$$H_1$$$ is selected
+
+* Test statistics z
+$$$z \\
+= \frac{m-\mu}{\frac{\sigma}{\sqrt{n}}} \\
+= \frac{244.65-300}{\frac{20}{\sqrt{300}}} \\
+= -47.935$$$
+
+Calculated $$$z = -47.935$$$ 
+$$$z\lt -1.64$$$ is correct
+
+Conclusion:
+$$$H_0$$$ is rejected
+$$$H_1$$$ is selected
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>

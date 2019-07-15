@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+
+<xmp>
+
+https://www.youtube.com/watch?v=--lSPtpGvJ0&list=PLsri7w6p16vvQCo9pmuRNY_SYoOGB6bWM&index=5
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:27:33.png' alt=''><xmp>
+
+A company battery, B company battery
+Unit: hour
+
+================================================================================
+$$$H_0: \bar{x}_A-\bar{x}_B = 0$$$
+$$$H_1: \bar{x}_A-\bar{x}_B \ne 0$$$
+
+n: number of sample
+
+$$$E(\bar{x}_A-\bar{x}_b) = \mu_A-\mu_B$$$
+
+$$$\sigma^2 \\
+= s_p^2 \\
+= \dfrac{(n_A-1)s_A^2 + (n_B-1)s_B^2 }{(n_A-1) + (n_B-1)} \\
+= \dfrac{(20-1)\times 3.253 + (20-1)\times 2.800 }{(20-1) + (20-1)} \\
+= 3.026$$$
+
+$$$s_p^2 = 3.026$$$
+$$$s_p = 1.740$$$
+
+================================================================================
+Test hypothesis
+
+* test statistics
+
+$$$t_{(n_A+n_B-2,\frac{\alpha}{2})} = \dfrac{\bar{x}_A - \bar{x}_B}{s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}$$$
+
+$$$t_{(20+20-2,0.025)} = \dfrac{16.1 - 15.2}{1.740 \sqrt{\frac{1}{20} + \frac{1}{20}}} = 1.636$$$
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:39:18.png' alt=''><xmp>
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:39:51.png' alt=''><xmp>
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:40:11.png' alt=''><xmp>
+* center between dot vertical lines: test statistics region
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:40:46.png' alt=''><xmp>
+* wide interval: trusted region
+$$$(16.1-15.2)-1.636 \times 1.740 \times \sqrt{\frac{1}{20}+\frac{1}{20}}
+\le \mu_A-\mu_B 
+\le (16.1-15.2)+1.636 \times 1.740 \times \sqrt{\frac{1}{20}+\frac{1}{20}}$$$
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:41:25.png' alt=''><xmp>
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:59:09.png' alt=''><xmp>
+test statistics region $$$\subset$$$ trusted region
+
+* Trusted region
+
+$$$(\bar{x}_A - \bar{x}_B) - t_{(n_A+n_B-2,\frac{\alpha}{2})} \times s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}
+\le \mu_A-\mu_B 
+\le (\bar{x}_A - \bar{x}_B) + t_{(n_A+n_B-2,\frac{\alpha}{2})} \times s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}$$$
+
+$$$(\bar{x}_A - \bar{x}_B) - t_{(n_A+n_B-2,\frac{\alpha}{2})} \times s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}
+\le \mu_A-\mu_B 
+\le (\bar{x}_A - \bar{x}_B) + t_{(n_A+n_B-2,\frac{\alpha}{2})} \times s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}$$$
+
+
+
+
+</xmp>
+   </BODY>
+</HTML>

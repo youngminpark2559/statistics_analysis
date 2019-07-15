@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+
+https://www.youtube.com/watch?v=fx4tCRiynMQ&list=PLsri7w6p16vtEz_J1G7HQG-Rm8vpZPtPS&index=3
+
+================================================================================
+If number of sample is large (generally $$$n>30$$$)
+$$$s^2$$$ becomes $$$\sigma^2$$$
+
+$$$z = \dfrac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}$$$
+
+================================================================================
+If number of sample is not large enough
+
+you use "test statistics t"
+
+$$$t_{n-1} = \dfrac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}$$$
+
+================================================================================
+Relationship between "t test" and "z test"
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_11:54:41.png' alt=''><xmp>
+
+z test $$$\subset$$$ t test
+
+================================================================================
+* Example
+
+* You survey 15 number of drink A
+
+Question
+* Set hypothesis
+* Perform left sided test using p-value=0.05
+* precondition: population distribution is normal distribution
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_11:56:55.png' alt=''><xmp>
+
+Answer
+test statistics t
+$$$t = \frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}$$$
+
+$$$t = \frac{302.1-300}{\frac{14.54}{\sqrt{15}}} = 0.568$$$
+
+* Degree of freedom = $$$n-1 = 15-1 = 14$$$
+* p-value $$$\alpha = 0.05$$$
+
+In left side test, when $$$\alpha=0.05$$$, $$$t =-1.761$$$
+according to t distribution table
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_12:14:42.png' alt=''><xmp>
+
+Conclusion:
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_12:15:17.png' alt=''><xmp>
+* null hypothesis $$$H_0$$$ is selected 
+* Hypothesis of "Drink A has 300ml" is correct
+
+================================================================================
+
+
+
+
+</xmp>
+   </BODY>
+</HTML>

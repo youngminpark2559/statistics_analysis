@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+
+https://www.youtube.com/watch?v=vtT5JzOIiCU&list=PLsri7w6p16vtEz_J1G7HQG-Rm8vpZPtPS&index=4
+
+================================================================================
+Previous methods create decision from rejection or non-rejection
+
+Test using p-value can create "intensity" on the decision
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_12:26:12.png' alt=''><xmp>
+
+Probability of entire
+p=1.0
+
+* Rejection area (5% in this case) to the $$$H_0$$$ is located in the right
+
+* Probability of distance from $$$\alpha$$$
+
+* Far: red intensity
+
+================================================================================
+p-value = significance level
+
+================================================================================
+* Example
+
+drink A 300ml
+surveyed sample n=300
+sample mean $$$\mu=294.65$$$
+sample std $$$\sigma=45$$$
+
+Question
+* Set hypothesis
+* Decide rejection of null hypothesis at $$$\alpha=0.05$$$
+
+Answer
+H_0: \mu=300
+H_1: \mu \lt 300
+n=300
+\mu=294.65
+\sigma=45
+\alpha=0.05
+
+
+test statistics
+$$$z \\
+= \frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}} \\
+= \frac{294.65-300}{\frac{45}{\sqrt{300}}}
+=-2.059$$$
+
+Calculate p
+$$$p 
+= p(z\lt -2.059) \\
+= 0.5 - (0\le z \le 2.059) \\
+= 0.5 - (0\le z \le 2.06) \\
+= 0.5 - 0.48 \\
+= 0.020$$$
+
+$$$\alpha=0.05, p=0.020$$$
+Reject $$$H_0$$$
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/007/pics/2019_05_12_12:59:21.png' alt=''><xmp>
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>

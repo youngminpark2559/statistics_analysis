@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+
+<xmp>
+
+https://www.youtube.com/watch?v=N5cbASDXl1w&list=PLsri7w6p16vvQCo9pmuRNY_SYoOGB6bWM&index=3
+
+================================================================================
+Case1: "enough sample", "variance of 2 populations is known"
+
+================================================================================
+$$$\mu_A$$$, $$$\mu_B$$$: mean of populations
+
+$$$\sigma_A^2$$$, $$$\sigma_B^2$$$: variance of 2 populations
+
+$$$\mu_A - \mu_B = \delta$$$
+* Difference between mean of A and mean of B
+
+$$$\bar{x}_A - \bar{x}_B = \delta$$$
+* Difference between mean of A sample and mean of B sample
+* predicted value for $$$\mu_A - \mu_B = \delta$$$
+
+* You can normalize it
+$$$z = \dfrac{(\bar{x}_A-\bar{x}_B) - (\mu_A - \mu_B)}{\sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}}$$$
+* Then, z follows $$$\mathcal{N}(mu=0,std=1)$$$
+
+================================================================================
+* Let's calculate trusted region
+
+$$$100(1-\alpha)\%$$$ trusted region for $$$\mu_A-\mu_B$$$
+* If $$$\alpha=0.05$$$, it's $$$95\%$$$ 
+
+* If it's 2 sided test ($$$\frac{\alpha}{2}$$$), let's calculate trusted region
+$$$(\bar{x}_A - \bar{x}_B) - z_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}
+\le \mu_A-\mu_B 
+\le (\bar{x}_A - \bar{x}_B) + z_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}$$$
+
+================================================================================
+Meaning
+* What you want to find is $$$\mu_A-\mu_B$$$
+* When you calculate $$$\mu_A-\mu_B$$$, 
+you have under bound $$$(\bar{x}_A - \bar{x}_B) - z_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}$$$ and upper bound $$$(\bar{x}_A - \bar{x}_B) + z_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}$$$
+
+================================================================================
+Let's create hypothesis
+
+$$$H_0: \mu_A - \mu_B = 0$$$
+$$$H_1: \mu_A - \mu_B \ne 0$$$
+
+* Left sided test
+$$$H_0: \mu_A - \mu_B = 0$$$
+$$$H_1: \mu_A - \mu_B \lt 0$$$
+
+* Right sided test
+$$$H_0: \mu_A - \mu_B = 0$$$
+$$$H_1: \mu_A - \mu_B \gt 0$$$
+
+================================================================================
+* Test statistics z for testing $$$H_0: \mu_A - \mu_B = 0$$$
+
+$$$z = \dfrac{(\bar{x}_A-\bar{x}_B) - (\mu_A - \mu_B)}{\sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}}$$$
+
+Since $$$H_0: \mu_A - \mu_B = 0$$$
+
+$$$z = \dfrac{(\bar{x}_A-\bar{x}_B)}{\sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}}$$$
+
+================================================================================
+Case2:
+* "enough sample", "variance of 2 populations is unknown"
+
+* You don't know $$$\sigma_A^2, \sigma_B^2$$$ of 2 populations
+
+* You can predict them via samples
+$$$s_A^2, s_B^2$$$
+
+* Different between mean of samples
+$$$\bar{x}_A - \bar{x}_B  \\
+= E(\bar{x}_A - \bar{x}_B) \\
+= E(\bar{x}_A) - E(\bar{x}_B)) \\
+=\mu_A-\mu_B$$$
+
+* Different between variance of samples
+$$$s^2(\bar{x}_A - \bar{x}_B) \\
+= s^2(\bar{x}_A) + s^2(\bar{x}_B)) - 2\times Cov(\bar{x}_A),\bar{x}_B)) \\
+= \frac{S_{x_A}^2}{n_A} + \frac{S_{x_B}^2}{n_B}$$$
+
+precondition: $$$n_A,n_B$$$ should $$$\ge$$$ 30
+
+================================================================================
+Trusted region wrt $$$\mu_A - \mu_B$$$ by $$$100(1-\alpha)\%$$$
+
+$$$(\bar{x}_A - \bar{x}_B) - z_{\frac{\alpha}{2}} \times \sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}
+\le \mu_A-\mu_B
+\le (\bar{x}_A - \bar{x}_B) + z_{\frac{\alpha}{2}} \times \sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}$$$
+
+================================================================================
+2 sided test
+$$$H_0: \mu_A-\mu_B=0$$$
+$$$H_1: \mu_A-\mu_B\ne 0$$$
+
+left sided test
+$$$H_0: \mu_A-\mu_B=0$$$
+$$$H_1: \mu_A-\mu_B\lt 0$$$
+
+left sided test
+$$$H_0: \mu_A-\mu_B=0$$$
+$$$H_1: \mu_A-\mu_B\gt 0$$$
+
+test statistics z
+$$$z = \dfrac{(\bar{x}_A - \bar{x}_B)-(\mu_A - mu_B)}{\sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}}$$$
+
+since $$$H_0: \mu_A-\mu_B=0$$$
+$$$z = \dfrac{(\bar{x}_A - \bar{x}_B)}{\sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}}$$$
+
+</xmp>
+   </BODY>
+</HTML>

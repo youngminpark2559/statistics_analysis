@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+
+Anaysis of variance (ANOVA)
+is the method which performs the testing the difference of the mean from over-3-populations
+
+================================================================================
+When there are 1 population or 2 populations,
+you can calculate the difference manually.
+
+But when you have over-3-populations,
+it's difficult to manually calculate every joint cases.
+
+So, in that cases, you can use ANOVA for simplicity
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_07:24:02.png' alt=''><xmp>
+
+* Suppose arbitrary pointt $$$\bar{x}_{ij}$$$
+
+* Entire deviation: $$$\bar{x} - \bar{x}_{ij}$$$
+
+* Population deviation: $$$\bar{x} - \bar{x}_{i}$$$
+
+* inner-popuplation deviation: $$$\bar{x}_{i} - \bar{x}_{ij}$$$
+
+================================================================================
+Deviation in ANOVA
+
+$$$F \\
+= \dfrac{\text{changes between classes}}{\text{changes in classes}} \\
+= \dfrac{\text{mean squre between classes}}{\text{mean squre in classes}}$$$
+
+================================================================================
+One-way ANOVA
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_07:30:41.png' alt=''><xmp>
+
+Convenient store A,B,C
+Satisfaction rate
+
+================================================================================
+Two-way ANOVA (cross checking)
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_07:31:23.png' alt=''><xmp>
+
+Convenient store A,B,C
+Region 1,2,3
+Satisfaction rate
+
+================================================================================
+Multi-way ANOVA
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_07:32:30.png' alt=''><xmp>
+
+Convenient store A,B,C
+Region 1,2,3
+Country 1,2,3
+Satisfaction rate
+
+================================================================================
+Multivariate ANOVA
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_07:33:28.png' alt=''><xmp>
+
+Convenient store A,B,C
+Satisfaction rate
+Revisiting rate
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_07:34:22.png' alt=''><xmp>
+
+Column: Separation, name, number of independent variable, number of dependet variable
+
+================================================================================
+* Preassumptions for ANOVA
+
+* Each population should have Gaussian normal distribution
+* Each population should have same variance
+* Each feature should be independent
+For example, independent between Convenient store and region in sampling
+* You should have enough number of feature vector data
+
+</xmp>
+   </BODY>
+</HTML>

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+https://www.youtube.com/watch?v=htXELssWGEk&list=PLsri7w6p16vsOVj5cL8U4z0m4RdMZfhme&index=2
+
+================================================================================
+$$$H_0$$$: no difference, $$$\bar{x}_A = \bar{x}_B = \bar{x}_C$$$
+$$$H_1$$$: there is difference, other cases
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:19:55.png' alt=''><xmp>
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:20:39.png' alt=''><xmp>
+
+Sum of squares total (SST)
+$$$SST = \sum\sum (x_{ij}-\bar{x})^2$$$
+
+$$$(1-3.434)^2+(4-3.434)^2+\cdots+  (3-3.434)^2 = 13.973$$$
+
+================================================================================
+Sum of squares between samples (SSB)
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:23:24.png' alt=''><xmp>
+
+$$$SSB = \sum n_i (\bar{x}_j - \bar{x})^2$$$
+
+$$$ 7(2.857-3.434)^2 + 8(4.000-3.434)^2 + 9(3.444-3.434)^2 = 4.894$$$
+
+================================================================================
+Sum of squares within samples (SSW)
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:25:41.png' alt=''><xmp>
+
+$$$SSW = \sum\sum (x_{ij} - \bar{x}_i)^2$$$
+
+$$$SSW_A=(1-2.857)^2+(4-2.857)^2+(3-2.857)^2=4.857$$$
+$$$SSW_B=(4-4.000)^2+(4-4.000)^2+(4-4.000)^2=2.000$$$
+$$$SSW_C=(4-3.444)^2+(3-3.444)^2+(3-3.444)^2=2.222$$$
+
+$$$SSW = 4.857+2.000+2.222 = 9.079$$$
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:31:24.png' alt=''><xmp>
+
+================================================================================
+
+When you compare some values, basic values are mean value
+
+Degree of freedom of SST: n-1
+Degree of freedom of SSB: i-1
+Degree of freedom of SSW: n-i
+
+================================================================================
+Mean square of between samples (MBS)
+$$$MBS = \frac{\text{SSB}}{i-1}$$$
+
+Mean square of within samples (MSW)
+$$$MSW = \frac{\text{SSW}}{n-i}$$$
+
+================================================================================
+Ratio of variance (F)
+
+$$$F \\
+= \dfrac{\text{change between classes}}{\text{changes within classes}} \\
+= \dfrac{MSB}{MSW} \\
+= \dfrac{\frac{SSB}{i-1}}{\frac{SSW}{n-i}}$$$
+
+================================================================================
+$$$MSB = \dfrac{4.894}{2} = 2.447$$$
+
+$$$MSW = \dfrac{9.079}{21} = 0.432$$$
+
+$$$F = \dfrac{2.447}{0.432} = 5.664$$$
+
+================================================================================
+One-way ANOVA table report
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:44:31.png' alt=''><xmp>
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:50:36.png' alt=''><xmp>
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:51:12.png' alt=''><xmp>
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_08:52:03.png' alt=''><xmp>
+
+$$$H_0$$$ is rejected
+
+</xmp>
+   </BODY>
+</HTML>

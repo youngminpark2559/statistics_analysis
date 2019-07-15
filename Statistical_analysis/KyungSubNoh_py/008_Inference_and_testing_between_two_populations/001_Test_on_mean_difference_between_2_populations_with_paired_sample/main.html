@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+
+<xmp>
+
+https://www.youtube.com/watch?v=lQx0mYMQ5C8&list=PLsri7w6p16vuFEiIVqKFwbB8MlHesFlEM&index=2&t=0s
+
+================================================================================
+Perform test on "2 populations"
+
+Test hypothesis on difference of mean from 2 populations
+
+"Paired sample" is much used for prior and post tests
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_12_09:43:53.png' alt=''><xmp>
+
+
+* Paired sample: extract sample from 2 populations
+* Samples are paired from 2 populations
+* Example: 
+- population before taking drug
+- population after taking drug
+- But people themselves didn't change
+
+================================================================================
+Weight in kg
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_12_09:46:20.png' alt=''><xmp>
+
+Before taking drug
+After taking drug
+
+$$$H_0$$$:no weight change --meaning--> $$$\bar{x}_{\text{before}}-\bar{x}_{\text{after}}=0$$$
+$$$H_1$$$:weight change --meaning--> $$$\bar{x}_{\text{before}}-\bar{x}_{\text{after}}\ne 0$$$
+
+================================================================================
+$$$\bar{x}_1$$$: before drug
+$$$\bar{x}_2$$$: after drug
+$$$n$$$: number of sample
+
+$$$x_1$$$: each sample before drug
+$$$x_2$$$: each sample after drug
+
+$$$x_1-x_2=d_x$$$
+Before and after at each period
+
+$$$\bar{d}_x = \dfrac{\sum\limits (x_1-x_2)}{n}$$$
+Before and after for entire period
+
+$$$S_{d_x}^2 = \dfrac{\sum\limits(d_x-\bar{d}_x)^2}{n-1}$$$
+Variance
+
+$$$S_{d_x} = \sqrt{S_{d_x}^2} = \sqrt{\dfrac{\sum\limits(d_x-\bar{d}_x)^2}{n-1}}$$$
+Std
+
+$$$s_{\bar{d}_x} = \dfrac{S_{d_x}}{\sqrt{n}}$$$
+
+================================================================================
+Let's calculate
+
+$$$\bar{d}_x = \dfrac{(75-73)+(74-74)+\cdots+(68-67)}{30} = 3.90$$$
+
+$$$S_{d_x}^2 = \dfrac{(2-3.9)^2+(0-3.9)^2+\cdots+(1-3.9)^2}{30-1} = 13.197$$$
+
+$$$S_{d_x} = \sqrt{13.197} = 3.633$$$
+
+$$$s_{\bar{d}_x} = \dfrac{3.633}{\sqrt{30}}$$$
+
+================================================================================
+test hypothesis
+
+p value=0.05
+degree of freedom = 29
+$$$t_{(29,0.025)} = 2.045$$$
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_12_18:52:37.png' alt=''><xmp>
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_12_18:52:54.png' alt=''><xmp>
+
+$$$d_x-t_{(n-1,\frac{\alpha}{2})} \times \dfrac{S_{d_x}}{\sqrt{n}} \le t \le d_x+t_{(n-1,\frac{\alpha}{2})} \times \dfrac{S_{d_x}}{\sqrt{n}}$$$
+
+$$$2.9 - 2.045 \times \dfrac{3.633}{\sqrt{30}} \le t \le 2.9 + 2.045 \times \dfrac{3.633}{\sqrt{30}}$$$
+
+$$$2.544 \le t \le 5.256$$$
+
+$$$t = \dfrac{d_x}{\frac{s_{d_x}}{\sqrt{n}}} = \dfrac{3.9}{0.663} = 5.880$$$
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_12_19:05:53.png' alt=''><xmp>
+
+Red areas: rejection area
+
+$$$H_0$$$ is rejected 
+
+</xmp>
+   </BODY>
+</HTML>

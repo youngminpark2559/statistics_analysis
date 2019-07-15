@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+https://www.youtube.com/watch?v=TtqUCUr711s&list=PLsri7w6p16vsOVj5cL8U4z0m4RdMZfhme&index=3
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_09:00:13.png' alt=''><xmp>
+
+Effect of "brand" to "satisfaction"
+Effect of "region" to "satisfaction"
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_09:01:23.png' alt=''><xmp>
+
+Even if A and B are independent,
+A and B can affect "interation effect" to "dependent variable" like satisfaction
+
+So, effects are A, B, A+B
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_09:02:34.png' alt=''><xmp>
+
+2 independent variables
+
+Numbers: satisfaction
+
+Question: there is difference in "satisfaction" wrt "2 variables"
+using $$$\alpha=0.05$$$?
+
+================================================================================
+Establish hypothesis
+
+$$$\bar{x}$$$: mean of entire
+$$$\bar{x}_i$$$: mean of each conveninet store
+$$$\bar{x}_j$$$: mean of each conveninet store's location
+$$$\bar{x}_{ij}$$$: 2 independent variables
+$$$\bar{x}_{ijk}$$$: 2 independent variables, kth observation
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_10:34:53.png' alt=''><xmp>
+
+i: conveninet store A,B,C
+j: location, KangNam, HongDae, JongRo
+k: kth satisfaction
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_10:41:28.png' alt=''><xmp>
+
+================================================================================
+$$$SST = (1-2.926)^2 + (4-2.926)^2 + \cdots + (4-2.926)^2 = 23.862$$$
+
+$$$SSB_i = 9(2.228-2.926)^2 + 9(3.111-2.926)^2 + \cdots + 9(3.444-2.926)^2 = 7.183$$$
+
+$$$SSB_j = 9(3.111-2.926)^2 + 9(2.778-2.926)^2 + \cdots + 9(2.889-2.926)^2 = 0.517$$$
+
+Interaction
+$$$SSB_{ij} = 3(2.000-2.222-3.111+2.926)^2 + \cdots + 3(3.333-3.444-2.889+2.926)^2 = 1.481$$$
+
+$$$SSW = SST - SSB_i - SSB_j - SSB_{ij} = 14.671$$$
+
+================================================================================
+$$$MSB_i = \dfrac{SSB_i}{i-1} = \dfrac{7.183}{3-1} = 3.592$$$
+
+$$$MSB_i = \dfrac{SSB_j}{j-1} = \dfrac{0.517}{3-1} = 0.259$$$
+
+$$$MSB_{ij} = \dfrac{SSB_{ij}}{(i-1)(j-1)} = \dfrac{1.481}{(3-1)(3-1)} = 0.370$$$
+
+$$$MSW = \dfrac{SSW}{i\times j \times (k-1)} = \dfrac{14.671}{3\times 3 \times 2}=0.815$$$
+
+================================================================================
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_10:58:46.png' alt=''><xmp>
+
+</xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/pics/2019_05_15_10:59:47.png' alt=''><xmp>
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>

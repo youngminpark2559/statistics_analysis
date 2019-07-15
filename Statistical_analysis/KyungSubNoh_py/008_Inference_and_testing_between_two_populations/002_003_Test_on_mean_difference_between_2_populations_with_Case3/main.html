@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+
+<xmp>
+
+https://www.youtube.com/watch?v=vzShqT6Eer8&list=PLsri7w6p16vvQCo9pmuRNY_SYoOGB6bWM&index=4
+
+================================================================================
+Case3:
+"not enough sample", variance of 2 populations is same
+
+subcase1:
+2 populations have normal distribution shape or normal distribution-like shape
+
+population1 follows $$$N(\mu_A,\sigma_A^2)$$$
+population2 follows $$$N(\mu_B,\sigma_B^2)$$$
+$$$\sigma_A^2 = \sigma_B^2 = \sigma^2$$$
+
+* Since $$$\sigma_A^2 = \sigma_B^2 = \sigma^2$$$
+you will predict common variance $$$\sigma_A^2$$$ and will use it
+
+* But you don't know variance of 2 populations,
+so you will use variance of 2 samples
+$$$s_A^2 = s_B^2 = s^2$$$
+* Above is called "pooled variance estimator"
+
+================================================================================
+"pooled variance estimator"
+
+"pooled variance estimator" is common variance of independent populations 
+in unbiased estimator form
+
+"pooled variance estimator" is notated by $$$s_p^2$$$
+
+$$$s_p^2 = \dfrac{\sum\limits_{i=1}^{N} (n_i-1)\times s_i^2}{\sum\limits_{i=1}^{N} (n_i-1)}$$$
+
+$$$n_i$$$: number of sample from ith population
+
+================================================================================
+Let's apply $$$s_p^2$$$ for population A and B
+
+$$$s_p^2 
+= \dfrac{(n_A-1)\times s_A^2 + (n_B-1)\times s_B^2}{(n_A-1)+(n_B-1)} \\
+= \dfrac{(n_A-1)\times s_A^2 + (n_B-1)\times s_B^2}{n_A+n_B-2}$$$
+
+================================================================================
+Trusted region (lower bound and upper bound)
+
+Trusted region wrt $$$\mu_A- \mu_B$$$ by using $$$100(1-\alpha)\%$$$
+
+2 sided test : $$$\frac{\alpha}{2}$$$
+
+$$$(\bar{x}_A-\bar{x}_B) - t_{(n_A+n_B -2,\frac{\alpha}{2})} \times s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}
+\le \mu_A- \mu_B
+\le (\bar{x}_A-\bar{x}_B) + t_{(n_A+n_B -2,\frac{\alpha}{2})} \times s_p \sqrt{\frac{1}{n_A} + \frac{1}{n_B}} $$$
+
+================================================================================
+Let's establish hypothesis
+
+2 sided test
+$$$H_0:\mu_A-\mu_B=0$$$
+$$$H_1:\mu_A-\mu_B\ne 0$$$
+
+left sided test
+$$$H_0:\mu_A-\mu_B=0$$$
+$$$H_1:\mu_A-\mu_B\lt 0$$$
+
+right sided test
+$$$H_0:\mu_A-\mu_B=0$$$
+$$$H_1:\mu_A-\mu_B\gt 0$$$
+
+test statistics
+$$$t_{n_A+n_B-2, \frac{\alpha}{2}} \\
+= \dfrac{(\bar{x}_A-\bar{x}_B)-(\mu_A-\mu_B)}{s_p \times \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}$$$
+
+Since $$$H_0:\mu_A-\mu_B=0$$$
+$$$= \dfrac{(\bar{x}_A-\bar{x}_B)}{s_p \times \sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}$$$
+
+================================================================================
+Case4
+"Not enough sample", "identical variance of 2 populations is not known"
+
+$$$\bar{x}_A-\bar{x}_B$$$
+
+$$$E(\bar{x}_A-\bar{x}_B) \\
+= E(\bar{x}_A)-E(\bar{x}_B) \\
+= \mu_A - \mu_B$$$
+
+$$$s^2(\bar{x}_A-\bar{x}_B)
+= s^2(\bar{x}_A) + s^2(\bar{x}_B) - 2Cov(\bar{x}_A-\bar{x}_B) \\
+= \frac{s_{x_A}^2}{n_A} + \frac{s_{x_B}^2}{n_B}$$$ 
+
+================================================================================
+Trusted region wrt $$$\mu_A-\mu_B$$$ by using $$$100(1-\alpha)\%$$$
+
+$$$(\bar{x}_A-\bar{x}_B) - t_{(n_A+n_B-2,\frac{\alpha}{2})} \sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}
+\le \mu_A-\mu_B 
+\le (\bar{x}_A-\bar{x}_B) + t_{(n_A+n_B-2,\frac{\alpha}{2})} \sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}$$$
+
+================================================================================
+Let's establish hypothesis
+
+2 sided test
+$$$H_0:\mu_A-\mu_B=0$$$
+$$$H_1:\mu_A-\mu_B\ne 0$$$
+
+left sided test
+$$$H_0:\mu_A-\mu_B=0$$$
+$$$H_1:\mu_A-\mu_B\lt 0$$$
+
+right sided test
+$$$H_0:\mu_A-\mu_B=0$$$
+$$$H_1:\mu_A-\mu_B\gt 0$$$
+
+test statistics
+$$$t_{(n_A+n_B-2, \frac{\alpha}{2})} \\
+= \dfrac{(\bar{x}_A-\bar{x}_B)-(\mu_A-\mu_B)}{\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}$$$
+
+Since $$$H_0:\mu_A-\mu_B=0$$$
+$$$= \dfrac{(\bar{x}_A-\bar{x}_B)}{\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}}$$$
+
+</xmp>
+   </BODY>
+</HTML>
