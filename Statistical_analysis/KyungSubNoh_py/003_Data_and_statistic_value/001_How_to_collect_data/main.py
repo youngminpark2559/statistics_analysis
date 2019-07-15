@@ -4,3 +4,11 @@
 # 2>&1 | tee -a e.l && code e.l
 
 # ================================================================================
+# /home/young/Pictures/2019_07_16_06:47:10.png
+
+# /home/young/Pictures/2019_07_16_06:47:27.png
+
+# /home/young/Pictures/2019_07_16_06:50:26.png
+
+# /home/young/Pictures/2019_07_16_06:51:46.png
+
