@@ -38,7 +38,7 @@ def calculate_poisson_distribution_probability(x,lambda_value):
   
   
   prob_value=(lambda_value**x)*(np.e**(-lambda_value))/math.factorial(x)
-  return round(prob_value,2)
+  return prob_value
 
 # ================================================================================
 lambda_value=3
@@ -89,22 +89,33 @@ x_vals=list(range(1,11))
 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 dict_for_poisson_dist={}
-list_for_poisson_dist=[]
 for one_lambda in lambda_vals:
+  list_for_poisson_dist=[]
   for one_x in x_vals:
     y_proba_val=calculate_poisson_distribution_probability(one_x,one_lambda)
     # print("y_proba_val",y_proba_val)
     list_for_poisson_dist.append(y_proba_val)
   dict_for_poisson_dist[one_lambda]=list_for_poisson_dist
+  del list_for_poisson_dist
 
 # print("dict_for_poisson_dist",dict_for_poisson_dist)
 
 # ================================================================================
-plt.plot([dict_for_poisson_dist[1],dict_for_poisson_dist[2]])
-# plt.plot()
-# plt.plot(dict_for_poisson_dist[3])
-# plt.plot(dict_for_poisson_dist[4])
-# plt.plot(dict_for_poisson_dist[5])
-# plt.plot(dict_for_poisson_dist[6])
-# plt.plot(dict_for_poisson_dist[7])
+fig1,axes1=plt.subplots()
+
+for one_plot in range(len(lambda_vals)):
+  axes1.plot(x_vals,dict_for_poisson_dist[one_plot+1],label="lambda="+str(lambda_vals[one_plot]))
+plt.title("Cumulative Poisson distribution")
+plt.xlim(0,11)
+plt.xlabel("Probability")
+plt.xlabel("Number of occurred events")
+plt.legend()
 plt.show()
+# /home/young/Pictures/2019_07_16_15:00:38.png
+
+# ================================================================================
+# /home/young/Pictures/2019_07_16_14:49:49.png
+
+# High lambda value ---> Normal distribution
+
+# ================================================================================
