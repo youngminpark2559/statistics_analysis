@@ -87,17 +87,26 @@ import math
 #        = 8.31%
 
 # ================================================================================
+def calculate_binomial_distribution(n,r,p):
+  fact_n=math.factorial(n)
+  fact_r=math.factorial(r)
+  fact_n_r=math.factorial(n-r)
+  power_p_2=np.power(p,2)
+  power_1_p_n_r=np.power(1-p,n-r)
+
+  prob_of_A_getting_2_best_job=fact_n/(fact_r*fact_n_r) * power_p_2 * power_1_p_n_r
+  # print("prob_of_A_getting_2_best_job",prob_of_A_getting_2_best_job)
+  # 0.08313908976417642
+  
+  return prob_of_A_getting_2_best_job
+
+# ================================================================================
 n=49
 r=2
 p=0.1
 
-fact_n=math.factorial(n)
-fact_r=math.factorial(r)
-fact_n_r=math.factorial(n-r)
-power_p_2=np.power(p,2)
-power_1_p_n_r=np.power(1-p,n-r)
+prob_value=calculate_binomial_distribution(n=n,r=r,p=p)
+# print("prob_value",prob_value)
+# 0.08313908976417642
 
-prob_of_A_getting_2_best_job=fact_n/(fact_r*fact_n_r) * power_p_2 * power_1_p_n_r
-print("prob_of_A_getting_2_best_job",prob_of_A_getting_2_best_job)
-afaf
-
+# ================================================================================
