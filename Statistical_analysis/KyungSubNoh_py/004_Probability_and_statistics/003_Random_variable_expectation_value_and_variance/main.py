@@ -8,10 +8,12 @@ import numpy as np
 from itertools import product
 
 # ================================================================================
-# ./pics/2019_07_16_10:23:54.png
+# <./pics/2019_07_16_10:23:54.png>
 
 all_possible_events=[1,2,3,4,5,6]
 mean_value=np.mean(all_possible_events)
+# print("mean_value",mean_value)
+# 3.5
 probability_of_each_event=[1/6,1/6,1/6,1/6,1/6,1/6]
 
 # ================================================================================
@@ -25,30 +27,30 @@ summed_probs=round(summed_probs,2)
 # ================================================================================
 # @ Expectation value
 
-multiplied=np.array(all_possible_events)*np.array(probability_of_each_event)
-# print("multiplied",multiplied)
+events_multiply_probs=np.array(all_possible_events)*np.array(probability_of_each_event)
+# print("events_multiply_probs",events_multiply_probs)
 # [0.16666667 0.33333333 0.5        0.66666667 0.83333333 1.        ]
 
-summed=np.sum(multiplied)
+summed=np.sum(events_multiply_probs)
 summed=round(summed,2)
 # print("summed",summed)
 # 3.5
 
 # ================================================================================
-# ./pics/2019_07_16_10:27:35.png
+# <./pics/2019_07_16_10:27:35.png>
 
 # ================================================================================
-# ./pics/2019_07_16_10:29:09.png
+# <./pics/2019_07_16_10:29:09.png>
 
-subtracted=np.array(all_possible_events)-np.array(mean_value)
-# print("subtracted",subtracted)
+events_minus_mean=np.array(all_possible_events)-np.array(mean_value)
+# print("events_minus_mean",events_minus_mean)
 # [-2.5 -1.5 -0.5  0.5  1.5  2.5]
 
-powered_by_2=np.power(subtracted,2)
-# print("powered_by_2",powered_by_2)
+events_minus_mean_power_by_2=np.power(events_minus_mean,2)
+# print("events_minus_mean_power_by_2",events_minus_mean_power_by_2)
 # [6.25 2.25 0.25 0.25 2.25 6.25]
 
-multipled=powered_by_2*np.array(probability_of_each_event)
+multipled=events_minus_mean_power_by_2*np.array(probability_of_each_event)
 # print("multipled",multipled)
 # [1.04166667 0.375      0.04166667 0.04166667 0.375      1.04166667]
 
@@ -58,10 +60,10 @@ summed=round(summed,2)
 # 2.92
 
 # ================================================================================
-# ./pics/2019_07_16_10:32:36.png
+# <./pics/2019_07_16_10:32:36.png>
 
 # ================================================================================
-# ./pics/2019_07_16_10:33:26.png
+# <./pics/2019_07_16_10:33:26.png>
 
 # ================================================================================
 std_of_RV=np.sqrt(summed)
@@ -69,7 +71,7 @@ std_of_RV=np.sqrt(summed)
 # 1.7088007490635062
 
 # ================================================================================
-# ./pics/2019_07_16_10:34:34.png
+# <./pics/2019_07_16_10:34:34.png>
 
 incentives=[300,150,0,-100]
 prob_of_each_incentive_A=[0.58,0.87,0.55,0.05]

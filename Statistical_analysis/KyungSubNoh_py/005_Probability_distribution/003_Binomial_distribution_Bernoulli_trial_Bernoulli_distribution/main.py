@@ -1,5 +1,5 @@
 # conda activate py36gputorch100 && \
-# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/KyungSubNoh_py/006_Probability_distribution/003_Binomial_distribution_Bernoulli_trial_Bernoulli_distribution && \
+# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/KyungSubNoh_py/005_Probability_distribution/003_Binomial_distribution_Bernoulli_trial_Bernoulli_distribution && \
 # rm e.l && python main.py \
 # 2>&1 | tee -a e.l && code e.l
 
@@ -17,15 +17,15 @@ import math
 
 # ================================================================================
 # Bernoulli distribution
-# Perform Bernoulli trial
-# Get probability wrt events
-# Plot probabilities
+# - Perform Bernoulli trial
+# - Get probability values with respect to events
+# - Plot probability values
 
 # Probability of True: p(x=True)
 # Probability of False: 1-p(x=True)
 
 # ================================================================================
-# ./pics/2019_07_16_13:21:43.png
+# <./pics/2019_07_16_13:21:43.png>
 
 # Expectation value
 # Variance
@@ -49,14 +49,14 @@ import math
 # X ~ B(n,p)
 
 # ================================================================================
-# ./pics/2019_07_16_13:25:26.png
+# <./pics/2019_07_16_13:25:26.png>
 
 # ================================================================================
 # Probability in binomial distribution
 
 # n number of trials
 # success probability: p
-# number of sucess: r
+# number of success: r
 
 # n trials
 # r success
@@ -66,16 +66,16 @@ import math
 # probability of n-r number of fail
 
 # Probability function for binomial distribution
-# ./pics/2019_07_16_13:51:02.png
+# <./pics/2019_07_16_13:51:02.png>
 
 # ================================================================================
-# ./pics/2019_07_16_13:51:32.png
+# <./pics/2019_07_16_13:51:32.png>
 
-# 10%: probability of A getting best job to this personality
+# 10%: probability of person_A getting best job to his personality
 
 # 49 companies participate the job-conference
 
-# Calculate probability of A getting 2 companies which A likes
+# Calculate probability of person_A getting 2 companies which person_A likes
 
 # ================================================================================
 # n=49

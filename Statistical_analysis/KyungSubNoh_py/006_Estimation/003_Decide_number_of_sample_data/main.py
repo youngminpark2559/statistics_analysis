@@ -9,36 +9,48 @@ import numpy as np
 # ================================================================================
 # Large sample data: good, credibility increases
 
-# $$$\bar{X} +- z_{\frac{\alpha}{2}} * standard error \\ $$$
-# $$$= \bar{X} +- z_{\frac{\alpha}{2}} * \frac{\sigma}{\sqrt{n}}$$$
+# $$$\bar{X} \pm z_{\frac{\alpha}{2}} \times \text{standard error} \\ $$$
+# $$$= \bar{X} \pm z_{\frac{\alpha}{2}} \times \frac{\sigma}{\sqrt{n}}$$$
 
-# $$$ n = \dfrac{z_{\frac{\alpha}{2} * \sigma}}{d} $$$
+# ================================================================================
+# Simpify above one wrt n
+
+# ================================================================================
+# c n: proper size of sample from the population
+# $$$ n = \dfrac{z_{\frac{\alpha}{2} \times \sigma}}{d} $$$
+# $$$ n = \left \dfrac{z_{\frac{\alpha}{2} \times \sigma}}{d} \right^2 $$$
 # d: allowed error
 
 # ================================================================================
-# ./pics/2019_07_16_19:16:53.png
+# <./pics/2019_07_16_19:16:53.png>
 
-# credibility=0.99
+# confidence: 99%
 z=2.58
-# allowed error
+
+# allowed error += 100ml
 d=100
+
+# population_std: 150ml
 population_std=150
 
-def calculate_number_of_sample_data(z,population_std,d):
+def calculate_proper_sample_size(z,population_std,d):
   num_sample_data=(z*population_std/d)**2
   return num_sample_data
 
-num_sample_data=calculate_number_of_sample_data(z=z,population_std=population_std,d=d)
+num_sample_data=calculate_proper_sample_size(z=z,population_std=population_std,d=d)
 # print("num_sample_data",num_sample_data)
 # 14.9769
 
 # ================================================================================
-# credibility: 99%
+# confidence: 99%
 z_half_alpha=2.58
+
 d=100
+
+# When you don't know population std, you extract 10 number of samples to calculate sample_std
 sample_std=170
 
-num_sample_data=calculate_number_of_sample_data(z=z_half_alpha,population_std=sample_std,d=d)
+num_sample_data=calculate_proper_sample_size(z=z_half_alpha,population_std=sample_std,d=d)
 # print("num_sample_data",num_sample_data)
 # 19.236996
 

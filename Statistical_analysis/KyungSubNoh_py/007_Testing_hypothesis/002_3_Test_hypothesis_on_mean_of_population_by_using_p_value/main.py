@@ -7,15 +7,22 @@
 import numpy as np
 
 # ================================================================================
-# ./pics/2019_07_16_21:52:23.png
+# <./pics/2019_07_16_21:52:23.png>
 
-# ./pics/2019_07_16_21:58:54.png
-
-# ./pics/2019_07_16_21:59:41.png
+# So far, to reject or adopt the null hypothesis,
+# you saw test_statistic_value_t < p_value
+# If it's true, null hypothesis is rejected
 
 # ================================================================================
-# ./pics/2019_07_16_21:59:55.png
+# <./pics/2019_07_16_21:58:54.png>
 
+# ================================================================================
+# <./pics/2019_07_16_21:59:41.png>
+
+# ================================================================================
+# <./pics/2019_07_16_21:59:55.png>
+
+# ================================================================================
 # H_0: mu=300
 # H_1: mu<300
 
@@ -30,8 +37,7 @@ def calculate_test_statistic_value(sample_mean,population_mean,sample_std,number
   return z_val
 
 z_val=calculate_test_statistic_value(
-  sample_mean=sample_mean,population_mean=population_mean,
-  sample_std=sample_std,number_of_sample=number_of_sample)
+  sample_mean=sample_mean,population_mean=population_mean,sample_std=sample_std,number_of_sample=number_of_sample)
 # print("z_val",z_val)
 # -0.19328389461155732
 
@@ -40,6 +46,6 @@ z_val=calculate_test_statistic_value(
 #  =0.5-p(0<=z<=2.06)
 #  =0.5-0.48=0.02
 
-# ./pics/2019_07_16_22:06:42.png
+# <./pics/2019_07_16_22:06:42.png>
 
 # ================================================================================

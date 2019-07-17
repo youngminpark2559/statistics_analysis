@@ -37,9 +37,9 @@ sum_of_all_probs=round(np.sum(probs_of_dice),1)
 # 1.0
 
 # ================================================================================
-# ./pics/2019_07_16_09:39:57.png
+# <./pics/2019_07_16_09:39:57.png>
 
-# ./pics/2019_07_16_09:39:45.png
+# <./pics/2019_07_16_09:39:45.png>
 
 # event_A: multiples of 2
 # event_B: multiples of 3
@@ -66,12 +66,12 @@ prob_A_or_B_occuring=round(prob_A_occuring+prob_B_occuring-prob_A_and_B_ocurring
 # print("prob_A_or_B_occuring",prob_A_or_B_occuring)
 # 0.7
 
-# ./pics/2019_07_16_09:44:48.png
+# <./pics/2019_07_16_09:44:48.png>
 
 # ================================================================================
-# ./pics/2019_07_16_09:45:05.png
+# <./pics/2019_07_16_09:45:05.png>
 
 # A and B events are independent
 
 # ================================================================================
-# ./pics/2019_07_16_09:45:25.png
+# <./pics/2019_07_16_09:45:25.png>

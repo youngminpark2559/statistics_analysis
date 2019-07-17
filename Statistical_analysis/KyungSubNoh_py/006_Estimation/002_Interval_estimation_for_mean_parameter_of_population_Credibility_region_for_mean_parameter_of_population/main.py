@@ -10,76 +10,81 @@ import numpy as np
 # Estimate population's mean parameter in interval
 
 # 1. When you know std parameter of population
-# ./pics/2019_07_16_16:43:21.png
+# <./pics/2019_07_16_16:43:21.png>
 
 # ================================================================================
-# ./pics/2019_07_16_16:45:58.png
+# <./pics/2019_07_16_16:45:58.png>
 
-# A company
-# Estimate mean lifespan of bulb of population
+# A_company
+# Estimate "mean lifespan of bulb" from population set
 
 # Extract 200 number of bulbs
 # sample_mean_lifespan=30000 hours
 # population_std=500 hours
 
-# Estimate mean parameters with 95% credibility (z=1.96)
+# Estimate mean parameters with 95% confidence interval (z=1.96)
 
 # ================================================================================
-def estimate_population_mean_parameter_interval(X_bar,z,population_std,number_of_sample_points):
+def estimate_population_mean_parameter_in_interval(X_bar,z,population_std,number_of_sample_points):
   lower_bound=X_bar-z*population_std/np.sqrt(number_of_sample_points)
   uppper_bound=X_bar+z*population_std/np.sqrt(number_of_sample_points)
   return lower_bound,uppper_bound
 
 # ================================================================================
-lower_bound,uppper_bound=estimate_population_mean_parameter_interval(X_bar=30000,z=1.96,population_std=500,number_of_sample_points=200)
+lower_bound,uppper_bound=estimate_population_mean_parameter_in_interval(
+  X_bar=30000,z=1.96,population_std=500,number_of_sample_points=200)
+
 # print("lower_bound",lower_bound)
 # 29930.703535443718
 # print("uppper_bound",uppper_bound)
 # 30069.296464556282
 
 # ================================================================================
-# ./pics/2019_07_16_16:58:30.png
+# <./pics/2019_07_16_16:58:30.png>
 
 # ================================================================================
 # Estimate population's mean parameter in interval
 
-# 1. When you don't know std parameter of population (general case)
+# 2. When you don't know std parameter of population (general case)
 # Use sample data's std
 
-# Since you don't know population's std, credibility range becomes large
+# Since you don't know population's std, confidence interval becomes large
 
 # And you use t distribution (when you don't know population's parameters) than z distribution
 
-# ./pics/2019_07_16_17:01:47.png
+# <./pics/2019_07_16_17:01:47.png>
 
 # ================================================================================
-# ./pics/2019_07_16_17:02:15.png
+# <./pics/2019_07_16_17:02:15.png>
 
 # 12 number students' height values
 
-# with 95% credibility, estimate population's mean parameter in interval
+# with 95% confidence, estimate population's mean parameter in interval
 
 # ================================================================================
 heights=[168,160,170,162,168,163,164,167,175,179,161,155]
 
 number_of_sample_points=len(heights)
+# print("number_of_sample_points",number_of_sample_points)
+# 12
 
 sample_data_mean=np.mean(heights)
 # print("sample_data_mean",sample_data_mean)
 # 166.0
 
 # ================================================================================
-subtracted=heights-sample_data_mean
-# print("subtracted",subtracted)
+h_minus_sam_mu=heights-sample_data_mean
+# print("h_minus_sam_mu",h_minus_sam_mu)
 # [  2.  -6.   4.  -4.   2.  -3.  -2.   1.   9.  13.  -5. -11.]
 
-powered_by_2=np.power(subtracted,2)
-# print("powered_by_2",powered_by_2)
+h_minus_sam_mu_pow_by_2=np.power(h_minus_sam_mu,2)
+# print("h_minus_sam_mu_pow_by_2",h_minus_sam_mu_pow_by_2)
 # [  4.  36.  16.  16.   4.   9.   4.   1.  81. 169.  25. 121.]
 
-summed=np.sum(powered_by_2)
+h_minus_sam_mu_pow_by_2_summed=np.sum(h_minus_sam_mu_pow_by_2)
 
-divided=summed/(12-1)
+# Use DOF n-1
+divided=h_minus_sam_mu_pow_by_2_summed/(12-1)
 
 sample_data_std=np.sqrt(divided)
 # print("sqrted",sqrted)
@@ -98,7 +103,8 @@ degree_of_freedom=12-1
 # t_half_alpha=2.201
 t_half_alpha=2.221
 
-def estimate_population_mean_parameter_in_interval(sample_data_mean,t_half_alpha,sample_data_std,number_of_sample_points):
+def estimate_population_mean_parameter_in_interval(
+  sample_data_mean,t_half_alpha,sample_data_std,number_of_sample_points):
   lower_bound=sample_data_mean-t_half_alpha*(sample_data_std/number_of_sample_points)
   upper_bound=sample_data_mean+t_half_alpha*(sample_data_std/number_of_sample_points)
   return lower_bound,upper_bound

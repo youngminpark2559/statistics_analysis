@@ -7,27 +7,42 @@
 import numpy as np
 
 # ================================================================================
-# ./pics/2019_07_16_21:33:36.png
+# <./pics/2019_07_16_21:33:36.png>
 
-# ./pics/2019_07_16_21:34:05.png
-
-# ./pics/2019_07_16_21:34:46.png
+# If number of sample $$$n \to \infty $$$, sample std becomes population std
 
 # ================================================================================
-# ./pics/2019_07_16_21:35:02.png
+# <./pics/2019_07_16_21:34:05.png>
 
+# When you have small number of sample
+# use sample std
+
+# ================================================================================
+# <./pics/2019_07_16_21:34:46.png>
+# z: special case (when you have enough number of sample)
+
+# ================================================================================
+# <./pics/2019_07_16_21:35:02.png>
+
+# ================================================================================
 def calculate_test_statistic_value_t(sample_mean,population_mean,sample_std,number_of_sample):
   test_statistic_value_t=(sample_mean-population_mean)/(sample_std/np.sqrt(number_of_sample))
   return test_statistic_value_t
 
+# ================================================================================
 number_of_sample=15
 
-test_statistic_value_t=calculate_test_statistic_value_t(sample_mean=302.1,population_mean=300,sample_std=14.54,number_of_sample=15)
-# print("test_statistic_value_t",test_statistic_value_t)
+test_statistic_value_t=calculate_test_statistic_value_t(
+  sample_mean=302.1,population_mean=300,sample_std=14.54,number_of_sample=15)
+print("test_statistic_value_t",test_statistic_value_t)
 # 0.5593717350093305
 
 DOF=number_of_sample-1
 
 p_value=0.05
 
-# ./pics/2019_07_16_21:40:18.png
+print(test_statistic_value_t<p_value)
+# False
+
+# ================================================================================
+# <./pics/2019_07_16_21:40:18.png>

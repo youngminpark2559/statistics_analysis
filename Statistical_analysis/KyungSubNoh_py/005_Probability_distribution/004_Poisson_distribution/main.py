@@ -19,24 +19,22 @@ import matplotlib.pyplot as plt
 # Probability of professional horse rider falls off
 # Probability of the bus arriving when you arrive the bus station
 
-# Use Poisson distribution in above cases
+# Use Poisson distribution for above cases
 
 # ================================================================================
 # Number of riding horse: n
 
 # Number of falling off: x
 
-# ./pics/2019_07_16_14:15:42.png
+# <./pics/2019_07_16_14:15:42.pics>
 
-# ./pics/2019_07_16_14:16:04.png
+# <./pics/2019_07_16_14:16:04.pics>
 
 # ================================================================================
-# ./pics/2019_07_16_14:16:28.png
+# <./pics/2019_07_16_14:16:28.pics>
 
 # ================================================================================
 def calculate_poisson_distribution_probability(x,lambda_value):
-  
-  
   prob_value=(lambda_value**x)*(np.e**(-lambda_value))/math.factorial(x)
   return prob_value
 
@@ -111,10 +109,10 @@ plt.xlabel("Probability")
 plt.xlabel("Number of occurred events")
 plt.legend()
 plt.show()
-# ./pics/2019_07_16_15:00:38.png
+# <./pics/2019_07_16_15:00:38.pics>
 
 # ================================================================================
-# ./pics/2019_07_16_14:49:49.png
+# <./pics/2019_07_16_14:49:49.pics>
 
 # High lambda value ---> Normal distribution
 
