@@ -45,6 +45,7 @@ sum_of_all_probs=round(np.sum(probs_of_dice),1)
 # event_B: multiples of 3
 # P(A and B)
 
+# ================================================================================
 U_set=[1,2,3,4,5,6,7,8,9,10]
 number_of_U_set_element=len(U_set)
 
@@ -74,12 +75,3 @@ prob_A_or_B_occuring=round(prob_A_occuring+prob_B_occuring-prob_A_and_B_ocurring
 
 # ================================================================================
 # ./pics/2019_07_16_09:45:25.png
-
-
-
-
-
-
-
-
-

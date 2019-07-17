@@ -21,7 +21,6 @@ weight_before_after_df=pd.read_csv('./Data/001_weight_before_after.csv',encoding
 # 0     1      75     73
 # 1     2      74     74
 # 2     3      75     76
-# 3     4      75     71
 
 # ================================================================================
 min_weight_from_before=weight_before_after_df["before"].min()

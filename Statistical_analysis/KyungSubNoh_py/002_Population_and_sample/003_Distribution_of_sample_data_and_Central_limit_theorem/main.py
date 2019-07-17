@@ -1,8 +1,9 @@
 # conda activate py36gputorch100 && \
-# cd /mnt/1T-5e7/mycodehtml/math/KSNOH-Statistics_py/002_Population_and_sample/003_Distribution_of_sample_data_and_Central_limit_theorem && \
+# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/KyungSubNoh_py/002_Population_and_sample/003_Distribution_of_sample_data_and_Central_limit_theorem && \
 # rm e.l && python main.py \
 # 2>&1 | tee -a e.l && code e.l
 
+# ================================================================================
 import random
 import itertools
 import numpy as np

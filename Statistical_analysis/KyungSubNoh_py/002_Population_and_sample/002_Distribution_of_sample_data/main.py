@@ -1,5 +1,5 @@
 # conda activate py36gputorch100 && \
-# cd /mnt/1T-5e7/mycodehtml/math/KSNOH-Statistics_py/002_Population_and_sample/002_Distribution_of_sample_data && \
+# cd /mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/KyungSubNoh_py/002_Population_and_sample/002_Distribution_of_sample_data && \
 # rm e.l && python main.py \
 # 2>&1 | tee -a e.l && code e.l
 

@@ -1,3 +1,68 @@
-xkbcommon: ERROR: failed to add default include path 
-Qt: Failed to create XKB context!
-Use QT_XKB_CONFIG_ROOT environmental variable to provide an additional search path, add ':' as separator to provide several search paths and/or make sure that XKB configuration data directory contains recent enough contents, to update please see http://cgit.freedesktop.org/xkeyboard-config/ .
+     id  before  after
+0     1      75     73
+1     2      74     74
+2     3      75     76
+3     4      75     71
+4     5      83     76
+5     6      77     68
+6     7      82     75
+7     8      62     61
+8     9      77     68
+9    10      82     75
+10   11      72     70
+11   12      75     71
+12   13      78     71
+13   14      71     70
+14   15      68     67
+15   16      76     73
+16   17      71     74
+17   18      54     50
+18   19      75     76
+19   20      77     68
+20   21      82     75
+21   22      74     74
+22   23      76     73
+23   24      70     69
+24   25      77     68
+25   26      82     75
+26   27      62     61
+27   28      77     68
+28   29      82     75
+29   30      68     67
+..  ...     ...    ...
+70   71      75     76
+71   72      77     68
+72   73      71     74
+73   74      54     50
+74   75      75     76
+75   76      77     68
+76   77      70     69
+77   78      77     68
+78   79      82     75
+79   80      62     61
+80   81      77     68
+81   82      82     75
+82   83      71     70
+83   84      68     67
+84   85      76     73
+85   86      71     74
+86   87      54     50
+87   88      75     76
+88   89      83     76
+89   90      72     70
+90   91      75     71
+91   92      78     71
+92   93      71     70
+93   94      68     67
+94   95      62     61
+95   96      77     68
+96   97      82     75
+97   98      71     70
+98   99      68     67
+99  100      75     71
+
+[100 rows x 3 columns]
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    afaf
+NameError: name 'afaf' is not defined
