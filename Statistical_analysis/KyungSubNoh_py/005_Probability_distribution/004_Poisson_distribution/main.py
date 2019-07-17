@@ -26,12 +26,12 @@ import matplotlib.pyplot as plt
 
 # Number of falling off: x
 
-# /home/young/Pictures/2019_07_16_14:15:42.png
+# ./pics/2019_07_16_14:15:42.png
 
-# /home/young/Pictures/2019_07_16_14:16:04.png
+# ./pics/2019_07_16_14:16:04.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_14:16:28.png
+# ./pics/2019_07_16_14:16:28.png
 
 # ================================================================================
 def calculate_poisson_distribution_probability(x,lambda_value):
@@ -111,10 +111,10 @@ plt.xlabel("Probability")
 plt.xlabel("Number of occurred events")
 plt.legend()
 plt.show()
-# /home/young/Pictures/2019_07_16_15:00:38.png
+# ./pics/2019_07_16_15:00:38.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_14:49:49.png
+# ./pics/2019_07_16_14:49:49.png
 
 # High lambda value ---> Normal distribution
 

@@ -14,19 +14,19 @@ from scipy.stats import norm
 # By using acumulated data, you can predict the future via normal distribution
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_11:59:26.png
+# ./pics/2019_07_16_11:59:26.png
 
 # 2 parameters
 # mean
 # variance
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_12:24:08.png
+# ./pics/2019_07_16_12:24:08.png
 
-# /home/young/Pictures/2019_07_16_12:25:10.png
+# ./pics/2019_07_16_12:25:10.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_12:25:44.png
+# ./pics/2019_07_16_12:25:44.png
 
 # region A to region B
 # 100 measures
@@ -93,7 +93,7 @@ plt.xlim(-3.5,3.5)
 plt.ylim(0,1)
 plt.ylabel("Probability")
 plt.show()
-# /home/young/Pictures/2019_07_16_13:04:20.png
+# ./pics/2019_07_16_13:04:20.png
 
 # ================================================================================
 z_vals=list(map(lambda x:norm.pdf(x),seq))
@@ -109,9 +109,9 @@ plt.xlim(-3.5,3.5)
 plt.ylim(0,1)
 plt.ylabel("Probability")
 plt.show()
-# /home/young/Pictures/2019_07_16_13:05:31.png
+# ./pics/2019_07_16_13:05:31.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_13:06:17.png
+# ./pics/2019_07_16_13:06:17.png
 
 # ================================================================================

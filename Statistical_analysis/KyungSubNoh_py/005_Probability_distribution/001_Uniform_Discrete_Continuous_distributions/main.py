@@ -11,7 +11,7 @@ import numpy as np
 # distributed probability values of possible events
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_11:03:01.png
+# ./pics/2019_07_16_11:03:01.png
 
 # Uniform distribution
 # Low information
@@ -20,17 +20,17 @@ import numpy as np
 # ================================================================================
 # Uniform distribution
 # - Discrete uniform distribution
-# /home/young/Pictures/2019_07_16_11:04:33.png
+# ./pics/2019_07_16_11:04:33.png
 
 # - Continuous uniform distribution
-# /home/young/Pictures/2019_07_16_11:04:42.png
+# ./pics/2019_07_16_11:04:42.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_11:03:15.png
+# ./pics/2019_07_16_11:03:15.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_11:05:31.png
+# ./pics/2019_07_16_11:05:31.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_11:28:02.png
+# ./pics/2019_07_16_11:28:02.png
 

@@ -7,14 +7,14 @@
 import numpy as np
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_21:33:36.png
+# ./pics/2019_07_16_21:33:36.png
 
-# /home/young/Pictures/2019_07_16_21:34:05.png
+# ./pics/2019_07_16_21:34:05.png
 
-# /home/young/Pictures/2019_07_16_21:34:46.png
+# ./pics/2019_07_16_21:34:46.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_21:35:02.png
+# ./pics/2019_07_16_21:35:02.png
 
 def calculate_test_statistic_value_t(sample_mean,population_mean,sample_std,number_of_sample):
   test_statistic_value_t=(sample_mean-population_mean)/(sample_std/np.sqrt(number_of_sample))
@@ -30,4 +30,4 @@ DOF=number_of_sample-1
 
 p_value=0.05
 
-# /home/young/Pictures/2019_07_16_21:40:18.png
+# ./pics/2019_07_16_21:40:18.png

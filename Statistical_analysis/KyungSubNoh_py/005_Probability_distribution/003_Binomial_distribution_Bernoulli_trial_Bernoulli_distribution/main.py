@@ -25,7 +25,7 @@ import math
 # Probability of False: 1-p(x=True)
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_13:21:43.png
+# ./pics/2019_07_16_13:21:43.png
 
 # Expectation value
 # Variance
@@ -49,7 +49,7 @@ import math
 # X ~ B(n,p)
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_13:25:26.png
+# ./pics/2019_07_16_13:25:26.png
 
 # ================================================================================
 # Probability in binomial distribution
@@ -66,10 +66,10 @@ import math
 # probability of n-r number of fail
 
 # Probability function for binomial distribution
-# /home/young/Pictures/2019_07_16_13:51:02.png
+# ./pics/2019_07_16_13:51:02.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_13:51:32.png
+# ./pics/2019_07_16_13:51:32.png
 
 # 10%: probability of A getting best job to this personality
 

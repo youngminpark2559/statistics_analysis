@@ -9,9 +9,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # ================================================================================
-# /home/young/Pictures/2019_07_15_21:11:19.png
+# ./pics/2019_07_15_21:11:19.png
 
-# /home/young/Pictures/2019_07_15_21:11:53.png
+# ./pics/2019_07_15_21:11:53.png
 
 # ================================================================================
 def extract_sample_data(src_data,num_of_element):
@@ -64,7 +64,7 @@ comb_3=extract_sample_data(src_data=time_for_going_to_school,num_of_element=3)
 # 10 = 5C3
 
 # ================================================================================
-# /home/young/Pictures/2019_07_15_21:28:03.png
+# ./pics/2019_07_15_21:28:03.png
 
 def calculate_sample_data_mean_value(sample_data):
   sample_data_mean_vals=[]
@@ -96,7 +96,7 @@ sample_data_mean_vals_comb_3=calculate_sample_data_mean_value(sample_data=comb_3
 # [37.0, 31.7, 39.3, 39.7, 47.3, 42.0, 35.7, 43.3, 38.0, 46.0]
 
 # ================================================================================
-# /home/young/Pictures/2019_07_15_21:34:56.png
+# ./pics/2019_07_15_21:34:56.png
 
 # ================================================================================
 fig=plt.figure()
@@ -143,7 +143,7 @@ plt.title("Distribution of 3 element sample data's mean values")
 
 # ================================================================================
 plt.show()
-# /home/young/Pictures/2019_07_16_06:25:37.png
+# ./pics/2019_07_16_06:25:37.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_06:26:11.png
+# ./pics/2019_07_16_06:26:11.png

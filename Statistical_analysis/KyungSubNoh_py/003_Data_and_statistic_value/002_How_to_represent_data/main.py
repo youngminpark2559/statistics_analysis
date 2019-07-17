@@ -103,7 +103,7 @@ for one_weight_interval in weight_list:
 # num_people 0
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_07:44:32.png
+# ./pics/2019_07_16_07:44:32.png
 
 # ================================================================================
 fig=plt.figure()
@@ -132,6 +132,6 @@ plt.ylabel("Number of people")
 plt.subplots_adjust(wspace=None,hspace=0.3)
 plt.tight_layout()
 plt.show()
-# /home/young/Pictures/2019_07_16_07:56:09.png
+# ./pics/2019_07_16_07:56:09.png
 
 # ================================================================================

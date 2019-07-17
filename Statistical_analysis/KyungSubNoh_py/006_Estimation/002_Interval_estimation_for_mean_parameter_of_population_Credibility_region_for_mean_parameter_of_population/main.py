@@ -10,10 +10,10 @@ import numpy as np
 # Estimate population's mean parameter in interval
 
 # 1. When you know std parameter of population
-# /home/young/Pictures/2019_07_16_16:43:21.png
+# ./pics/2019_07_16_16:43:21.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_16:45:58.png
+# ./pics/2019_07_16_16:45:58.png
 
 # A company
 # Estimate mean lifespan of bulb of population
@@ -38,7 +38,7 @@ lower_bound,uppper_bound=estimate_population_mean_parameter_interval(X_bar=30000
 # 30069.296464556282
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_16:58:30.png
+# ./pics/2019_07_16_16:58:30.png
 
 # ================================================================================
 # Estimate population's mean parameter in interval
@@ -50,10 +50,10 @@ lower_bound,uppper_bound=estimate_population_mean_parameter_interval(X_bar=30000
 
 # And you use t distribution (when you don't know population's parameters) than z distribution
 
-# /home/young/Pictures/2019_07_16_17:01:47.png
+# ./pics/2019_07_16_17:01:47.png
 
 # ================================================================================
-# /home/young/Pictures/2019_07_16_17:02:15.png
+# ./pics/2019_07_16_17:02:15.png
 
 # 12 number students' height values
 
