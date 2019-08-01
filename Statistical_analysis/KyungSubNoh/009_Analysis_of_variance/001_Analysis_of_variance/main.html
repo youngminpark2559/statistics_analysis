@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=bI8hSPc3uJo&list=PLsri7w6p16vsOVj5cL8U4z0m4RdMZfhme&index=2&t=0s
+
+================================================================================
+ANOVA (Analysis of variance)
+  - about over 3 groups
+  - analysis method which tests "mean difference"
+  - for test hypothesis, it uses f-distribution
+
+================================================================================
+/home/young/Pictures/2019_08_02_06:57:28.png
+
+/home/young/Pictures/2019_08_02_06:58:07.png
+
+================================================================================
+Onee way ANOVA
+/home/young/Pictures/2019_08_02_06:58:43.png
+
+================================================================================
+Two way ANOVA
+
+satisfaction group1
+satisfaction group2
+
+factors:
+  - conveninent store
+  - location
+
+/home/young/Pictures/2019_08_02_06:59:15.png
+
+================================================================================
+Multi way ANOVA
+
+/home/young/Pictures/2019_08_02_07:00:36.png
+
+================================================================================
+Multi variate ANOVA
+/home/young/Pictures/2019_08_02_07:01:22.png
+
+================================================================================
+ANOVA 
+/home/young/Pictures/2019_08_02_07:01:58.png
+
+================================================================================
+Assumption of ANOVA
+
+- Each population should have normal distribution
+- Each population should have same variance
+- Each sample should be extracted independently (when "location sample" is extracted, it shouldn't affect "conveninent store sample")
+- Sample size should be proper
+
+================================================================================
+The case where variance of population is different
+/home/young/Pictures/2019_08_02_07:03:29.png
+
+================================================================================
+
+</xmp>
+   </BODY>
+</HTML>
