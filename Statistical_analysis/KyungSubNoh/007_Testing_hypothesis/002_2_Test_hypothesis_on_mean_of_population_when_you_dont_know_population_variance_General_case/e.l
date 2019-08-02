@@ -1,2 +1,0 @@
-test_statistic_value_t 0.5593717350093305
-False
