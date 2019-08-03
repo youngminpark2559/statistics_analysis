@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=N5cbASDXl1w&list=PLsri7w6p16vvQCo9pmuRNY_SYoOGB6bWM&index=3
+
+================================================================================
+002_002_Test_hypothesis_on_2_populations_mean_difference_with_independent_samples_Case1_enough_sample_in_same_population_variance_and_in_different_population_variance
+
+================================================================================
+/home/young/Pictures/2019_08_03_10:05:37.png
+
+================================================================================
+Calculate confidence interval
+/home/young/Pictures/2019_08_03_10:17:53.png
+
+================================================================================
+Now, you should establish hypothesis 
+
+and then you should test the hypothesis
+To do that, you should calculate test-statistic
+
+================================================================================
+/home/young/Pictures/2019_08_03_10:20:29.png
+
+================================================================================
+Enough sample, no information about variance uniformity (general case)
+
+- use sample variance
+
+/home/young/Pictures/2019_08_03_10:26:33.png
+
+================================================================================
+$$$H_0$$$: $$$\mu_A - \mu_B = 0$$$
+Estimated one: $$$\bar{x}_A - \bar{x}_B$$$
+
+/home/young/Pictures/2019_08_03_10:29:06.png
+
+$$$\sigma^2$$$ (population variance) is replaced with $$$s^2$$$ (sample variance)
+
+================================================================================
+/home/young/Pictures/2019_08_03_10:34:35.png
+
+What you want to estimate: $$$\mu_A-\mu_B$$$
+
+$$$\bar{x}_A - \bar{x}_B$$$: alternatively you use mean difference of "sample"
+Since it's sampe, you should use "interval" based on "given confidence interval"
+
+================================================================================
+/home/young/Pictures/2019_08_03_10:41:30.png
+
+</xmp>
+   </BODY>
+</HTML>

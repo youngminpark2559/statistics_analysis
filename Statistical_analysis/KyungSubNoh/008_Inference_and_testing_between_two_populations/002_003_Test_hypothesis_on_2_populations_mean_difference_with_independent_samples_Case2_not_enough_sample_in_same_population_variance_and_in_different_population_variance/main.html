@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+================================================================================
+- Not enough sample
+- Sample populations variance
+
+================================================================================
+Required assumption
+- 2 populations should have "normal distribution" or "similar normal distribution"
+
+$$$\mathcal{N}(\mu_A,\sigma_A^2)$$$
+$$$\mathcal{N}(\mu_B,\sigma_B^2)$$$
+
+$$$\sigma_A^2=\sigma_B^2=\sigma^2$$$
+
+$$$s_A^2=s_B^2=s^2$$$
+
+================================================================================
+Pooled variance estimator $$$S_p^2$$$
+
+- There are populations
+- They are independent
+- Pooled variance estimator is expressed by "unbiased estimator of comman variance"
+
+================================================================================
+/home/young/Pictures/2019_07_18_12:42:33.png
+
+$$$n$$$: number of populations
+$$$n_i$$$: sample size
+
+================================================================================
+/home/young/Pictures/2019_07_18_12:43:56.png
+
+In both sided test, confidence interval
+$$$(\bar{x}_A - \bar{x}_B) - t_{(n_A+n_B-2,\frac{\alpha}{2})} S_p \sqrt{\frac{1}{n_A}+\frac{1}{n_B}} \le
+\mu_A-\mu_B \le
+(\bar{x}_A - \bar{x}_B) + t_{(n_A+n_B-2,\frac{\alpha}{2})} S_p \sqrt{\frac{1}{n_A}+\frac{1}{n_B}}$$$
+
+================================================================================
+Let's establish hypothesis
+/home/young/Pictures/2019_07_18_12:45:19.png
+
+test statistic t
+
+================================================================================
+Case
+- Not enough sample
+- No information about variance
+- That is, you don't know variance uniformity of populations
+
+$$$\bar{x}_{A} - \bar{x}_{B}$$$
+$$$E(\bar{x}_A - \bar{x}_B) = E(\bar{x}_A) - E(\bar{x}_B) = \mu_A-\mu_B$$$
+
+$$$s^2(\bar{x}_A - \bar{x}_B) = s^2(\bar{x}_A) + s^2(\bar{x}_B) - 2Cov(\bar{x}_A-\bar{x}_B) = \frac{s_{x_A}^2}{n_A} + \frac{s_{x_B}^2}{n_B}$$$
+
+================================================================================
+Confidence interval (when variance uniformity is unknown)
+/home/young/Pictures/2019_07_18_12:51:19.png
+
+================================================================================
+Establish hypothesis and create statistic t
+/home/young/Pictures/2019_07_18_12:57:03.png
+
+</xmp>
+   </BODY>
+</HTML>

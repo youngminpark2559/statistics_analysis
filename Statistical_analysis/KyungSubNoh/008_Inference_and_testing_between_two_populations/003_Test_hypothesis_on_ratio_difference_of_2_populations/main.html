@@ -51,36 +51,43 @@ MathJax.Hub.Config({
    <BODY>
 
 <xmp>
-
+This is personal study note
+Copyright and original reference:
 https://www.youtube.com/watch?v=k6cj3yBXm1k&list=PLsri7w6p16vvQCo9pmuRNY_SYoOGB6bWM&index=6
 
 ================================================================================
-Population A
-Population A has ratio A ($$$P_A$$$)
+Is there ratio difference between 2 populations?
+/home/young/Pictures/2019_08_03_12:49:32.png
 
-Population B
-Population B has ratio B ($$$P_B$$$)
+================================================================================
+Suppose population A has ratio A ($$$P_A$$$)
+
+Suppose population B has ratio B ($$$P_B$$$)
 
 You want to know $$$P_A-P_B$$$
-Can you calculate $$$P_A-P_B$$$ by using $$$\hat{P}_A-\hat{P}_B$$$
+
+To do it, can you calculate $$$P_A-P_B$$$ by using $$$\hat{P}_A-\hat{P}_B$$$?
 
 ================================================================================
 Hypothesis
 
 2 side test
 $$$H_0:P_A-P_B=0$$$
-$$$H_0:P_A-P_B\ne 0$$$
+$$$H_1:P_A-P_B\ne 0$$$
 
 left side test
 $$$H_0:P_A-P_B=0$$$
-$$$H_0:P_A-P_B\lt 0$$$
+$$$H_1:P_A-P_B\lt 0$$$
 
 right side test
 $$$H_0:P_A-P_B=0$$$
-$$$H_0:P_A-P_B\gt 0$$$
+$$$H_1:P_A-P_B\gt 0$$$
 
 ================================================================================
+Example
 </xmp><img src='https://raw.githubusercontent.com/youngminpark2559/mathematics/master/prob_stat/KSNOH/008/pics/2019_05_14_10:59:09.png>' alt=''><xmp>
+
+/home/young/Pictures/2019_08_03_13:14:49.png
 
 * Presence frequence in university A
 * Unit: number of people
@@ -90,28 +97,36 @@ $$$H_0:P_A-P_B\gt 0$$$
 $$$H_0: p_a - p_b = 0$$$
 $$$H_1: p_a - p_b \ne 0$$$
 
+================================================================================
 number of samples
 $$$n_a, n_b$$$
 
+================================================================================
 expectation value
 $$$ E(\hat{p}_a - \hat{p}_b) = p_a-p_b$$$
 
+================================================================================
 variance
 $$$\sigma^2(\hat{p}_a-\hat{p}_b) \\
 = \sigma^2(\hat{p}_a) + \sigma^2(\hat{p}_b) \\
 = \dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}$$$
 
-test statsitics
+================================================================================
+test statsitics z
 $$$z = \dfrac{ (\hat{p}_a - \hat{p}_b) - (p_a - p_b) }{\sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} - \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b} }}$$$
 
 ================================================================================
+/home/young/Pictures/2019_08_03_13:08:04.png
+ 
 $$$s^2(\hat{p}_a - \hat{p}_b)
 = \dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}$$$
 
 $$$s = \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}$$$
 
 ================================================================================
-Trusted region
+Confidence interval
+
+/home/young/Pictures/2019_08_03_13:08:59.png
 
 $$$(\hat{p}_a - \hat{p}_b) - z_{\frac{\alpha}{2}} \times \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}
 \le p_a - p_b
@@ -119,6 +134,8 @@ $$$(\hat{p}_a - \hat{p}_b) - z_{\frac{\alpha}{2}} \times \sqrt{\dfrac{\hat{p}_a(
 
 ================================================================================
 Calculation
+
+/home/young/Pictures/2019_08_03_13:13:24.png
 
 a class: 30 people $$$\times$$$ 15 weeks = 450 people
 a class: 35 people $$$\times$$$ 15 weeks = 525 people
@@ -130,9 +147,10 @@ b class: 476 people
 $$$\hat{p}_a = \dfrac{424}{450} = 0.942$$$
 $$$\hat{p}_b = \dfrac{476}{525} = 0.907$$$
 
+standard error
 $$$s(\hat{p}_a - \hat{p}_b) \\
 = \sqrt{\dfrac{\hat{p}_a(1-\hat{p}_a)}{n_a} + \dfrac{\hat{p}_b(1-\hat{p}_b)}{n_b}}\\
-= \sqrt{\dfrac{0.942(1-0.942)}{450} + \dfrac{0.907(1-0.907)}{525}}
+= \sqrt{\dfrac{0.942(1-0.942)}{450} + \dfrac{0.907(1-0.907)}{525}} \\
 = 0.017$$$
 
 $$$z_{\frac{\alpha}{2}} = 1.96$$$ $$$\Rightarrow$$$ $$$\pm 1.96 \times 0.017 = \pm 0.033 $$$
@@ -141,8 +159,11 @@ $$$(0.942 - 0.907) - 0.033 \le p_a-p_b \le (0.942 - 0.907) + 0.033$$$
 $$$0.002 \le p_a-p_b \le 0.068$$$
 
 ================================================================================
-Rejection area
+Test hypothesis
 
+/home/young/Pictures/2019_08_03_13:14:28.png
+
+Rejection area
 $$$|\pm 1.96| \gt |z|$$$
 
 $$$z \\
@@ -151,8 +172,6 @@ $$$z \\
 = 2.059$$$
 
 $$$H_0$$$ is rejected
-
-================================================================================
 
 </xmp>
    </BODY>
