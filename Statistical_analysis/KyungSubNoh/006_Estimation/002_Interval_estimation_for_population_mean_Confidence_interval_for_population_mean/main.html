@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=iraPUcOH5uw&list=PLsri7w6p16vulKaxOlNQFSWuyDuE9oEVP&index=2
+
+================================================================================
+Estimate "population's mean parameter in interval"
+
+1. When you know "std parameter of population" (rare case)
+/home/young/Pictures/2019_07_16_16:43:21.png
+
+================================================================================
+Example
+<./pics/2019_07_16_16:45:58.png>
+
+================================================================================
+A_company
+Estimate "mean lifespan of bulb" of population set
+
+Extract 200 number of bulbs
+sample_mean_lifespan=30000 hours
+population_std=500 hours
+
+Estimate "mean parameters interval" with 95% confidence (z=1.96)
+
+================================================================================
+Calculation
+/mnt/1T-5e7/mycodehtml/statistics_analysis/Statistical_analysis/KyungSubNoh/006_Estimation/002_Interval_estimation_for_population_mean_Confidence_interval_for_population_mean/pics/2019_07_16_16:46:58.png
+
+================================================================================
+Standard deviation vs standard error
+<./pics/2019_07_16_16:58:30.png>
+
+$$$ \text{std} = \sqrt{\text{variance}}$$$
+
+standard error:
+$$$\dfrac{\text{std from sample}}{\sqrt{n}}$$$
+
+================================================================================
+Estimate population's mean parameter in interval
+
+2. When you don't know std parameter of population (general case)
+Use sample data's std
+
+Since you don't know population's std, confidence interval becomes large
+
+And you use t distribution (when you don't know population's parameters) than z distribution
+
+<./pics/2019_07_16_17:01:47.png>
+
+================================================================================
+Example student heights
+<./pics/2019_07_16_17:02:15.png>
+
+12 number students' height values
+
+with 95% confidence, estimate population's mean parameter in interval
+
+================================================================================
+Calculation
+
+Sample mean and sample std
+/home/young/Pictures/2019_07_22_08:15:52.png
+
+std error
+/home/young/Pictures/2019_07_22_08:16:54.png
+
+degree of freedom = 12-1 =11
+
+Estimate
+/home/young/Pictures/2019_07_22_08:18:58.png
+
+</xmp>
+   </BODY>
+</HTML>

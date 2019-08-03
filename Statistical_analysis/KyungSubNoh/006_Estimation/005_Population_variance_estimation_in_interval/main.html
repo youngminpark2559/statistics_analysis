@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=WDjc2Ie-oY8&list=PLsri7w6p16vulKaxOlNQFSWuyDuE9oEVP&index=5
+
+================================================================================
+Interval of population's variance
+
+<./pics/2019_07_16_19:53:08.png>
+
+variance distribution of one sample: $$$\chi^2$$$ distribution
+variance distribution of two sample: F distribution
+
+================================================================================
+chi-square
+
+<./pics/2019_07_16_19:53:51.png>
+
+sample=extract_sample(n,population)
+
+$$$s^2$$$=get_sample_variance(sample)
+
+dof,dist=calculate_variance_distribution($$$s^2$$$)
+dof=$$$n-1$$$
+dist: $$$\chi^2$$$ distribution
+
+================================================================================
+chi-square distribution in graph
+
+/home/young/Pictures/2019_07_16_19:54:01.png
+
+min and max in "interval estimation"
+$$$\chi^2_{1- \frac{\alpha}{2}} \le \frac{(n-1)s^2}{\sigma^2} \le \chi^2_{\frac{\alpha}{2}}$$$
+
+================================================================================
+Example
+
+<./pics/2019_07_16_19:55:36.png>
+
+/home/young/Pictures/2019_07_16_19:55:37.png
+      
+</xmp>
+   </BODY>
+</HTML>
