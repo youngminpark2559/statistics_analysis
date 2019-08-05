@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=QcINiIQFN2s&list=PLsri7w6p16vscJ4rkstBZQJqNtZf8Tkxq&index=2&t=0s
+
+================================================================================
+Suppose there are 2 variables
+
+Regression inspects "effect of one variable (cause)" to "other variable (result)"
+
+================================================================================
+Can you see the causality between advertisement_price and profit
+
+/home/young/Pictures/2019_08_06_08:33:58.png
+
+- By using "correlation analysis", you can see "correlation (like positive or negative correlation)" between 2 variables
+
+- By using "regression analysis", you can predict future data (like profit of 2016) based on past data (like profit of 2001-2015)
+
+- Or, by using "regression analysis", you can explain the relationship between "independent variable" and "dependent variable"
+
+================================================================================
+The concept of "dependent variable" and "independent variable"
+
+/home/young/Pictures/2019_08_06_08:40:04.png
+
+- Independent variable
+  - It occurs by itself
+  - It independently affects other variables "by itself", so, it's independent
+
+- Dependent variable
+  - It's affected by independent variables, and then, it's changed
+
+================================================================================
+Simple regression analysis
+
+/home/young/Pictures/2019_08_06_08:42:16.png
+
+Simple regression analysis
+  - Analysis method which analyzes "effect of independent variable X" to "dependent variable Y"
+  - by using regression equation
+  - Note that the number of "independent variable" is only 1
+  - For example, X: advertisement_price, Y: profit
+  - If the number of "independent variable" is greater than 2, it's multiple regression analysis
+  - For example, X1: advertisement_price, X2: the size of company, X3: the location of company, Y: profit
+
+================================================================================
+Different regression equation graph pattern in natural science/engineering and social science
+
+/home/young/Pictures/2019_08_06_08:48:10.png
+
+================================================================================
+How to calculate the slope $$$\beta_1 = \dfrac{\delta Y} {\delta X}$$$
+
+/home/young/Pictures/2019_08_06_08:49:33.png
+
+================================================================================
+Residual $$$\epsilon$$$
+
+/home/young/Pictures/2019_08_06_08:53:51.png
+
+$$$Y=\beta_0 + \beta_1 X_1$$$ can't fully explain the pattern of data
+
+So, you need to add residual term $$$\epsilon$$$ into regression equation
+$$$Y=\beta_0 + \beta_1 X_1 + \epsilon$$$
+
+Residual $$$\epsilon$$$ tries to minimize the error between "predicted line" and "pattern of real data"
+
+Residual $$$\epsilon$$$ occurs randomly in its value
+
+</xmp>
+   </BODY>
+</HTML>
