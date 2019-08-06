@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=WPXkk8-GcFo&list=PLsri7w6p16vscJ4rkstBZQJqNtZf8Tkxq&index=3
+
+================================================================================
+/home/young/Pictures/2019_08_06_10:03:26.png
+
+The goal is to calculate $$$\hat{\beta}_0$$$ and $$$\hat{\beta}_1$$$
+
+How to calculate $$$\hat{\beta}_1$$$
+$$$\hat{\beta}_1 = \dfrac{\sum\limits (X_i-\bar{X})(Y_i-\bar{Y}) } {\sum\limits (X_i-\bar{X})^2 }$$$
+
+How to calculate $$$\hat{\beta}_0$$$
+$$$\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1 \bar{X}$$$
+
+================================================================================
+Insert the values
+
+$$$\hat{\beta}_1 \\
+= \dfrac{\sum\limits (X_i-\bar{X})(Y_i-\bar{Y}) } {\sum\limits (X_i-\bar{X})^2 } \\
+= \dfrac{(13-16.467)(94-98.933) + (8-16.467)(70-98.93) + \cdots } {(13-16.467)^2 + (8-16.467)^2 + cdots} \\
+= 2.168$$$
+
+$$$\hat{\beta}_0 \\
+= \bar{Y} - \hat{\beta}_1 \bar{X} \\
+= 98.933 - 2.168*16.467 \\
+= 62.929$$$
+
+$$$\hat{Y} = 62.929 + 2.186*X_i$$$
+
+</xmp>
+   </BODY>
+</HTML>
