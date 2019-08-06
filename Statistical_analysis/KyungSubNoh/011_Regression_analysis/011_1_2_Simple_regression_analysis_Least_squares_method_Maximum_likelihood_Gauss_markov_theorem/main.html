@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 20px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+}
+/* img {
+ width:900px;
+} */
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+This is personal study note
+Copyright and original reference:
+https://www.youtube.com/watch?v=R7GyEGsQ_ys&list=PLsri7w6p16vscJ4rkstBZQJqNtZf8Tkxq&index=2
+
+================================================================================
+The smaller residual $$$\epsilon$$$ becomes, it's better for the regression model to explain the pattern between X and Y
+
+================================================================================
+/home/young/Pictures/2019_08_06_09:30:33.png
+
+Regression equation from population: $$$Y_i = \beta_0 + \beta_i X_i$$$
+
+Regression equation from sample: $$$\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_i X_i$$$
+
+Good regreesion analysis:
+$$$\hat{\beta}$$$ should be near to $$$\beta$$$
+
+But note that $$$\hat{\beta}$$$ and $$$\beta$$$ don't need to be same
+
+================================================================================
+But to make them almost same, you can use residual $$$\epsilon$$$
+$$$Y_i = \beta_0 + \beta_i X_i$$$
+$$$\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_i X_i + \hat{\epsilon}_i$$$
+
+If $$$\hat{\epsilon}_i$$$ can be minized, $$$Y_i = \beta_0 + \beta_i X_i$$$ and $$$\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_i X_i + \hat{\epsilon}_i$$$ become almost same
+
+================================================================================
+Method of least squares:
+  - The method which minimizes $$$\sum\limits \hat{\epsilon}^2$$$
+
+/home/young/Pictures/2019_08_06_09:32:03.png
+
+Sum of "squared $$$\epsilon$$$" becomes minimum, regression model $$$\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_1 X_i + \hat{\epsilon}_i$$$ is the best
+
+================================================================================
+/home/young/Pictures/2019_08_06_09:38:47.png
+
+Maximum likelihood method
+  - Unlike "method of least squares" where summed cost should be minimized
+  - The goal of "maximum likelihood method" is to maximize likelihood of explaining parameters of population
+  - Probability about the likelihood is continuously changing
+  - Likelihood continusouly chases the population's regression equation
+
+================================================================================
+Result from "method of least squares" and "maximum likelihood method" is ultimately same
+
+================================================================================
+Gauss markov theorem
+
+When following regression equation is given, $$$Y = \beta_0 + \beta_1 X_1$$$
+
+When you estimate above regression equation, using "method of least squares" is the best is proved by Gauss and markov
+
+Gauss-markov theorem:
+  - Under following conditions
+  1. independent variables are not random
+  2. Expectation value about the residual is 0, $$$E(\epsilon)=0$$$
+  3. $$$E(\epsilon_i,\epsilon_j)=0$$$, $$$E(\epsilon_i,\epsilon_j)=\gamma^2$$$
+
+  - using "method of least squares" is BLEU (Best, Linear model, Estimation, Unbiased)
+
+</xmp>
+   </BODY>
+</HTML>
